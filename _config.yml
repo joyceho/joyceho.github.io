@@ -12,10 +12,16 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+<<<<<<< HEAD
 keywords: # leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
+=======
+
+url:  # the base hostname & protocol for your site
+baseurl: # the subpath of your site, e.g. /blog/
+>>>>>>> bf65f69 (Fixing webpage to track changes in source material)
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
@@ -66,6 +72,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # -----------------------------------------------------------------------------
 # Social integration
 # -----------------------------------------------------------------------------
+<<<<<<< HEAD
 github_username: joyceho # your GitHub user name
 gitlab_username: # your GitLab user name
 twitter_username: joycehoUT # your Twitter handle
@@ -75,6 +82,13 @@ telegram_username: # your Telegram user name
 scholar_userid: DrUBb5sAAAAJ # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
+=======
+
+github_username: joyceho # your GitHub user name
+twitter_username: joycehoUT # your Twitter handle
+linkedin_username: # your LinkedIn user name
+scholar_userid: DrUBb5sAAAAJ # your Google Scholar ID
+>>>>>>> bf65f69 (Fixing webpage to track changes in source material)
 orcid_id: # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
@@ -111,6 +125,7 @@ panelbear_analytics:  # panelbear analytics site ID (format: XXXXXXXXX)
 google_site_verification:  # your google-site-verification ID (Google Search Console)
 bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 
+<<<<<<< HEAD
 # -----------------------------------------------------------------------------
 # Blog
 # -----------------------------------------------------------------------------
@@ -153,6 +168,8 @@ disqus_shortname: al-folio # put your disqus shortname
 external_sources:
   - name: medium.com
     rss_url: https://medium.com/@al-folio/feed
+=======
+>>>>>>> bf65f69 (Fixing webpage to track changes in source material)
 
 # -----------------------------------------------------------------------------
 # Collections
@@ -173,7 +190,11 @@ collections:
   tutorials:
     output: true
     permalink: /tutorial/:path/
+<<<<<<< HEAD
 news_scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+=======
+
+>>>>>>> bf65f69 (Fixing webpage to track changes in source material)
 news_limit: 10
 
 # -----------------------------------------------------------------------------
@@ -211,6 +232,7 @@ plugins:
   - jekyll-link-attributes
   - jekyll-twitter-plugin
   - jemoji
+<<<<<<< HEAD
 
 # Sitemap settings
 defaults:
@@ -245,6 +267,8 @@ jekyll-archives:
 
 display_tags: ['formatting', 'images', 'links', 'math', 'code'] # this tags will be dispalyed on the front page of your blog
 =======
+=======
+>>>>>>> bf65f69 (Fixing webpage to track changes in source material)
   # - bootstrap
   # - material-sass
 
@@ -256,6 +280,10 @@ scholar:
 
   last_name: Ho
   first_name: [Joyce C, Joyce, J.C.]
+<<<<<<< HEAD
+=======
+
+>>>>>>> bf65f69 (Fixing webpage to track changes in source material)
   style: apa
   locale: en
 
