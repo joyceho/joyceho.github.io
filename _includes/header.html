@@ -1,4 +1,3 @@
-
     <header>
 
       <!-- Nav Bar -->
@@ -42,7 +41,6 @@
                   {% assign about_title = page.title %}
                 {% endif %}
               {% endfor %}
-
               <!-- About -->
               <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
                 <a class="nav-link" href="{{ '/' | relative_url }}">{{ about_title }}
@@ -94,6 +92,9 @@
               {%- endif -%}
               {%- endif -%}
               {% endfor -%}
+              <li class="nav-item">
+              <a class="nav-link" href="{{ '/assets/pdf/joyceho.pdf' | prepend: site.baseurl | prepend: site.url }}">cv</a>
+            </li>
               {%- if site.enable_darkmode %}
 
               <!-- Toogle theme mode -->
