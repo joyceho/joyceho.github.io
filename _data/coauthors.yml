@@ -1,18 +1,102 @@
-"Adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"Agichtein":
+  - firstname: ["Eugene"]
+    url: http://www.cs.emory.edu/~eugene/
 
-"Podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
+"Carvalho":
+  - firstname: ["Carlos M"]
+    url: https://faculty.mccombs.utexas.edu/carlos.carvalho/index.html
+
+"Cheung":
+  - firstname: ["William"]
+    url: https://www.comp.hkbu.edu.hk/~william/
+
+"Galaviz":
+  - firstname: ["Karla"]
+    url: https://publichealth.indiana.edu/research/faculty-directory/profile.html?user=kgalaviz
+
+"Gero":
+  - firstname: ["Zelalem"]
+    url: https://www.linkedin.com/in/zelalem-gero
+
+"Ghosh":
+  - firstname: ["Joydeep"]
+    url: https://www.ideal.ece.utexas.edu/ghosh/
+
+"Gunasekar":
+  - firstname: ["Suriya"]
+    url: http://sgunasekar.github.io/
+
+"He":
+  - firstname: ["Huan"]
+    url: https://hehuannb.github.io/
+
+"Henderson":
+  - firstname: ["Jette"]
+    url: http://ejette.github.io/
+
+"Intille":
+  - firstname: ["Stephen S"]
+    url: https://www.ccs.neu.edu/home/intille/
+
+"Jiang":
+  - firstname: ["Xiaoqian"]
+    url: https://sbmi.uth.edu/faculty-and-staff/xiaoqian-jiang.htm
+
+"Khalil":
+  - firstname: ["Elias B"]
+    url: https://ekhalil.com/
+
+"Lee":
+  - firstname: ["Eric W"]
+    url: http://www.cs.emory.edu/~ewlee4/
+
+"Ma": 
+  - firstname: ["Jing"]
+    url: https://sites.google.com/view/jma78/home
+
+"Malin": 
+  - firstname: ["Bradley A"]
+    url: https://hiplab.mc.vanderbilt.edu/people/malin/
+
+"Papalexakis": 
+  - firstname: ["Evangelos E"]
+    url: https://www.cs.ucr.edu/~epapalex/
+
+"Perros": 
+  - firstname: ["Ioakeim"]
+    url: https://www.cc.gatech.edu/~iperros3/
+
+"Shin":
+  - firstname: ["Bonggun"]
+    url: https://bgshin.github.io/
+
+"Sotoodeh":
+  - firstname: ["Mani"]
+    url: https://manisci.github.io/
+
+"Sun":
+  - firstname: ["Jimeng"]
+    url: http://sunlab.org/
+
+"Wallace":
+  - firstname: ["Byron C"]
     url: https://en.wikipedia.org/wiki/Boris_Podolsky
 
-"Rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"Xi":
+  - firstname: ["Yuanzhe"]
+    url: http://www.mathcs.emory.edu/~yxi26/
 
-"Bach": 
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"Xiong": 
+  - firstname: ["Li"]
+    url: http://www.mathcs.emory.edu/~lxiong/
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"Yin":
+  - firstname: ["Kejing"]
+    url: https://kejing.me/
+
+"Zhang": 
+  - firstname: ["Qiuchen"]
+    url: https://sites.google.com/view/qiuchen
+
+  - firstname: ["Wenhui"]
+    url: https://www.researchgate.net/profile/Wenhui_Zhang11

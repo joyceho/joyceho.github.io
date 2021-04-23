@@ -1,11 +1,18 @@
 ---
 layout: page
-permalink: /teaching/
-title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+permalink: /courses/
+title: courses
+semesters: [Fall 2019, Fall 2018, Spring 2018, Fall 2017, Spring 2017, Spring 2016]
 nav: true
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
-
-Organize your courses by years, topics, or universities, however you like!
+{% for y in page.semesters %}
+  <h3 class="semester">{{y}}</h3>
+  <ul>
+    {% for course in site.courses %}
+        {% if course.semester == y %}
+            <li><a href="{{ course.url | prepend: site.baseurl | prepend: site.url }}">{{ course.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+   </ul>
+{% endfor %}
