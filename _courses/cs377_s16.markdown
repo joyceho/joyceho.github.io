@@ -1,0 +1,95 @@
+---
+layout: page
+title: CS 377 - Database Systems
+semester: Spring 2016
+---
+
+## Course Overview
+This is an introduction course on database systems. It introduces the fundamental concepts of the design and use of database systems. We will introduce the Entity-relationship model used to design a database. The main focus of the course will be relational database systems where we will study the relational data model and the SQL query language for accessing the data maintained by relational database systems. We will also give a brief overview of database systems implementation, including topics such as storage management and transaction processing.
+
+Prerequisites: CS171
+
+## Syllabus
+
+### Course Logistics
+* Piazza: All annoucements, assignment clarifications, and slide corrections will be posted here. Make sure you check it on a regular basis.
+* Office Hours: 
+  * Joyce Ho: W 1:30PM-3:30PM; Th 9:30AM-11:30AM @MSC W414
+
+### Textbook
+* (Recommended) Fundamentals of Database Systems (6th / 7th edition), by Ramez Elmasri & Shamkant B. Navathe
+* (Supplemental) Database System Concepts, by Abraham Silberschatz, Henry Korth, & S. Sudarshan
+* (Supplemental) Database Systems: The Complete Book, by Hector Garcia-Molina, Jeffrey D. Ullman, & Jennifer Widom
+
+### Assignment (Homeworks & Projects) Policy
+* Assignments are due electronically at 11:59 PM. The assignment will specify whether the submission is via Gradescope (homeworks) or Canvas (projects).
+* Each student receives six 24-hour "late days" that can be used on any of the 7 assignments (4 homeworks, 2 programming projects, 1 final project) throughout the semester. _No more than 3 late days may be used on any single assignment._
+* Use your late days wisely, no more late days remaining means you will receive __zero credit__ for any late assignment
+* Additional extensions on assignments will be granted with appropriate documentation from the Office of Undergraduate Education (OUE) 
+
+### Honor Code and Collaboration Policy
+All class work is governed by the [College Honor Code](http://catalog.college.emory.edu/academic/policy/honor_code.html) and the [Department Statement of Policy on Computer Assignments](http://www.mathcs.emory.edu/site/undergraduate/general-information/spca.php).
+While we encourage you to discuss assignments with other students, any code and writeups __must be written by yourself__.
+It is not okay to share code or write code collaboratively (this includes posting and/or sharing your code publicly).
+Apparent copies from any source, including your colleagues and internet sites, will be referred to the Emory Honor Council.
+Every programming assignment must have a README file with the following comment:
+> /* THIS CODE IS MY OWN WORK, IT WAS WRITTEN WITHOUT CONSULTING CODE
+>    WRITTEN BY OTHER STUDENTS. _Your_Name_Here_ */
+
+### Exam Policy
+* The midterm will be on **3/8 from 2:30pm-3:45pm** (class time). 
+* Rescheduling the midterm is not permitted except in emergencies with appropriate documentation from OUE.
+* The final will be on **5/7 from 3:00pm-5:30pm** and cannot be rescheduled under any circumstance.
+
+### Grading
+Your grade will be determined by a weighted average of all the graded items. Grades may be curved (up) so that the class mean falls at least in a B range. The class median and mean for each assignment and exam will be announced so you have an idea where you stand.
+The participation element consists of short bi-weekly quizzes (unannounced), monthly surveys (on Piazza), and class coding questions (on Canvas).
+
+|Component | Weight |
+|:--------|:-------:|
+| Homeworks (4) | 16% |
+| Programming Projects (2) | 15% |
+| Final Project (1) | 18% |
+| Midterm       | 20% |
+| Final         | 25% |
+| Participation | 6% |
+
+### Students with Documented Disabilities
+
+If you have a documented disability and have anticipated barriers related to the format or requirements of this course, or presume having a disability (e.g. mental health, attention, learning, vision, hearing, physical or systemic), and are in need of accommodations for this semester, we encourage you to contact the [Office of Accessibility Services (OAS)](http://equityandinclusion.emory.edu/access) to learn more about the registration process and steps for requesting accommodations.
+
+If you are a student that is currently registered with OAS and have not received a copy of your accommodation notification letter within the first week of class, please notify OAS immediately. Students who have accommodations in place are encouraged to contact the instructor during the first week of the semester, to communicate your specific needs for the course as it relates to your approved accommodations. All discussions with OAS and faculty concerning the nature of your disability remain confidential.
+
+## Schedule
+The reading material listed below is optional, but it refers to Fundamentals of Database Systems (7th edition) by Ramez Elmasri & Shamkant B. Navathe. The lecture plan may deviate over the course of the semester.
+
+
+\# | Date | Topic | Reference (Chapter)  | Assignment 
+-- | ---- | ------| -----------| ----------
+1  | 1/18 | Class Cancelled |  | 
+2  | 1/23 | Introduction & Database Concepts | 1,2 |
+3  | 1/25 | ER Model | 3 | Homework 1 (due 2/6)
+4  | 1/30 | Relational Model | 5,9 |
+5  | 2/1  | Relational Algebra | 5 |
+6  | 2/6  | Relational Algebra | 8 | Homework 2 (due 2/20)
+7  | 2/8  | Relational Calculus | 7 | 
+8  | 2/13 | SQL: Intro | 6,7 |
+9  | 2/15 | SQL: Querying | 6,7 |  
+10 | 2/20 | SQL: Querying | 6,7 | Project 1 (due 3/6) 
+11 | 2/22 | SQL: Querying | 6,7 |
+12 | 2/27 | SQL: Advanced Queries | 6,7 | 
+13 | 3/1  | SQL: Advanced Queries | 6,7 | 
+14 | 3/6  | Midterm Review  | | 
+15 | 3/8  | Midterm         | | Project 2 (due 3/29)
+16 | 3/20 | Database Design | 14,15
+17 | 3/22 | Database Design | 14,15 | Homework 3 (due 4/10)
+18 | 3/27 | PHP | 11 | 
+19 | 3/29 | Indexing | 16,17 | Final Project (due 4/30)
+20 | 4/3  | Indexing | 16,17 | 
+21 | 4/5  | Query Processing & Optimization | 18,19 | 
+22 | 4/10 | Query Processing & Optimization | 18,19 | Homework 4 (due 4/19)
+23 | 4/12 | Transaction Management & Concurrency Control | 20,21 | 
+24 | 4/17 | Transaction Management & Concurrency Control | 20,21
+25 | 4/19 | NoSQL  | 24 | 
+26 | 4/24 | NoSQL  | 24 | 
+27 | 4/26 | Review |
