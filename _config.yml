@@ -307,7 +307,6 @@ jekyll-archives:
 display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
 display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
 
-
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
 # -----------------------------------------------------------------------------
@@ -315,6 +314,7 @@ display_categories: ["external-services"] # these categories will be displayed o
 scholar:
   last_name: Ho
   first_name: [Joyce C, Joyce, J.C.]
+
   style: apa
   locale: en
 
