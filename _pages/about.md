@@ -32,4 +32,3 @@ I am an associate professor in the Computer Science Department at Emory Universi
 My research focuses on the development of novel data mining and machine learning algorithms to address problems in healthcare. Recent projects include identifying patient subgroups or phenotypes, integration of new streams of data, fusing different modalities of data (e.g., structured medical codes and unstructured text), and dealing with conflicting expert annotations.
 
 I am always looking for students (undergraduate, masters, and PhD). Please see my [group page](group/) for more info about contacting me.
-
