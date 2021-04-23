@@ -3,6 +3,7 @@ layout: about
 title: about
 permalink: /
 description: Assistant Professor,<a href="cs.emory.edu">CS@Emory University</a>.
+
 profile:
   align: right
   image: prof_pic.jpg
