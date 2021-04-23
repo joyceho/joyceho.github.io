@@ -188,7 +188,6 @@ newsletter:
   endpoint: # your loops endpoint (e.g., https://app.loops.so/api/newsletter-form/YOUR-ENDPOINT)
   # https://loops.so/docs/forms/custom-form
 
-
 # -----------------------------------------------------------------------------
 # Collections
 # -----------------------------------------------------------------------------
@@ -216,6 +215,7 @@ announcements:
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
   
+
 news_scrollable: true # adds a vertical scroll bar if there are more than 3 news items
 news_limit: 10
 
@@ -332,6 +332,7 @@ display_categories: ["external-services"] # these categories will be displayed o
 scholar:
   last_name: Ho
   first_name: [Joyce C, Joyce, J.C.]
+
   style: apa
   locale: en
 
