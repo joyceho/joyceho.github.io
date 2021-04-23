@@ -11,7 +11,11 @@ profile:
     <p>400 Dowman Dr</p>
     <p>Atlanta, GA 30322</p>
     <p>(404)-727-5605</p>
+<<<<<<< HEAD
 
+=======
+news: true # includes a list of news items
+>>>>>>> cc40e5c0 (Fixing webpage to track changes in source material)
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
