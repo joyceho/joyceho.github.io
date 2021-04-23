@@ -2,16 +2,15 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
-
+description: Assistant Professor,<a href="cs.emory.edu">CS@Emory University</a>.
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  address: >
+    <p>400 Dowman Dr</p>
+    <p>Atlanta, GA 30322</p>
+    <p>(404)-727-5605</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,8 +26,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Joyce Ho is an assistant professor in the Computer Science Department at Emory University. She has a Ph.D. in Electrical and Computer Engineering from the University of Texas at Austin, and an M.A. and B.S. in Electrical Engineering and Computer Science from Massachusetts Institute of Technology.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Joyce’s research involves the development of novel data mining and machine learning algorithms to address problems in healthcare. She has papers in premier journals and conferences across both computer science and clinical venues including KDD, AISTATS, TKDD, AMIA, JMLR, and JBI. Her work received the best paper award at the 2017 AMIA Joint Summits on Translational Science. She also co-founded a successful healthcare analytics company (Accordion Health) and previously worked at Lawrence Livermore National Laboratory.
