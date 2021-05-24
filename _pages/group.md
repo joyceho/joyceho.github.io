@@ -6,13 +6,16 @@ description: Practical Data Mining & Exploration Lab
 nav: true
 ---
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/group.jpg' | relative_url }}">
+<div class="row justify-content-sm-center">
+    <div class="col-sm-6 mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/group_s2021.jpg' | relative_url }}">
+    </div>
+    <div class="col-sm-6 mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/group_w2018.jpg' | relative_url }}">
     </div>
 </div>
 <div class="caption">
-        Group photo from Winter 2019.
+        Group photos from Spring 2021 (left) and Winter 2018 (right).
 </div>
 
 We analyze and mine complex, heterogenous data to explore, characterize, and understand the underlying states / processes. Our approaches are based on statistical machine learning and data mining that work on a variety of real-life applications with a focus on healthcare applications.
