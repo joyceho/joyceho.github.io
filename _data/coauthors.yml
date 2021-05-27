@@ -10,6 +10,10 @@
   - firstname: ["William"]
     url: https://www.comp.hkbu.edu.hk/~william/
 
+"Choi":
+  - firstname: ["Jinho"]
+    url: http://www.cs.emory.edu/~choi/home.html
+
 "Galaviz":
   - firstname: ["Karla"]
     url: https://publichealth.indiana.edu/research/faculty-directory/profile.html?user=kgalaviz
@@ -80,7 +84,7 @@
 
 "Wallace":
   - firstname: ["Byron C"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+    url: http://www.byronwallace.com/
 
 "Xi":
   - firstname: ["Yuanzhe"]
@@ -95,6 +99,9 @@
     url: https://kejing.me/
 
 "Zhang": 
+  - firstname: ["Jing"]
+    url: https://jingz1.com/
+
   - firstname: ["Qiuchen"]
     url: https://sites.google.com/view/qiuchen
 
