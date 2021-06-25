@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Joyce C Ho | CS 171 - Introduction to Computer Science II</title>
+<meta name="description" content="Joyce Ho - Assistant professor at Emory University.
+">
+
+<!-- Open Graph -->
+
+
+<!-- Bootstrap & MDB -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" integrity="sha512-RO38pBRxYH3SoOprtPTD86JFOclM51/XTIdEPh5j8sj4tp8jmQIx26twG52UaLi//hQldfrh7e51WzP9wuP32Q==" crossorigin="anonymous" />
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"  integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+<!-- Code Syntax Highlighting -->
+<link rel="stylesheet" href="https://gitcdn.xyz/repo/jwarby/jekyll-pygments-themes/master/github.css" />
+
+<!-- Styles -->
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22></text></svg>">
+
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<link rel="canonical" href="/course/cs171_f17/">
+
+<!-- JQuery -->
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+
+<!-- Theming-->
+
+  <script src="/assets/js/theme.js"></script>
+  <!-- Load DarkMode JS -->
+<script src="/assets/js/dark_mode.js"></script>
+
+
+
+
+
+
+    
+<!-- MathJax -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      tags: 'ams'
+    }
+  };
+</script>
+<script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js"></script>
+<script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+  </head>
+
+  <body class="fixed-top-nav ">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+    <div class="container">
+      
+      <a class="navbar-brand title font-weight-lighter" href="/">
+       <span class="font-weight-bold">Joyce</span> C  Ho
+      </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/">
+              about
+              
+            </a>
+          </li>
+          
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/courses/">
+                courses
+                
+              </a>
+          </li>
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/group/">
+                group
+                
+              </a>
+          </li>
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/projects/">
+                projects
+                
+              </a>
+          </li>
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/publications/">
+                publications
+                
+              </a>
+          </li>
+          
+          
+          <li class="nav-item">
+          <a class="nav-link" href="/assets/pdf/joyceho.pdf">cv</a>
+          </li>
+          
+            <div class = "toggle-container">
+              <a id = "light-toggle">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+              </a>
+            </div>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+      <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">CS 171 - Introduction to Computer Science II</h1>
+    <p class="post-description"></p>
+  </header>
+
+  <article>
+    <h3 id="course-overview">Course Overview</h3>
+<p>A continuation of CS 170, and sometimes referred to as intermediate programming in Java. The focus of the class is the use and implementation of data structures, introductory algorithm analysis, and object oriented design and programming with Java.</p>
+
+<p><strong>Prerequisites</strong>: CS 170</p>
+
+<h3 id="schedule-tentative">Schedule (Tentative)</h3>
+
+<table class="table">
+<thead>
+  <tr><th class="col-md-1">#</th><th class="col-md-1">Date</th><th class="col-md-7">Topic</th><th class="col-md-3">Assignments</th></tr>
+</thead>
+<tbody>
+  <tr>
+    <td align="center" colspan="6" class="plan-sec-header">Introduction</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>8/23</td>
+    <td class="side-borders">Overview &amp; Course Logistics</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>8/29</td>
+    <td class="side-borders">Java Review</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>8/31</td>
+    <td class="side-borders">Arrays</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>9/5</td>
+    <td class="side-borders">ArrayLists</td>
+    <td>Homework 1</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>9/7</td>
+    <td class="side-borders">Objects</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>9/12</td>
+    <td class="side-borders" rowspan="2">Inheritance</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>9/14</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>9/19</td>
+    <td class="side-borders">Stacks</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>9/21</td>
+    <td class="side-borders">Queues</td>
+    <td>Homework 2</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>9/26</td>
+    <td class="side-borders" rowspan="3">LinkedLists</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>9/28</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>10/3</td>
+    <td>Homework 3</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>10/5</td>
+    <td class="side-borders">Algorithms</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td>10/12</td>
+    <td class="side-borders">Basic Sorting</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td align="center" colspan="6" class="plan-sec-header">Midterm Week</td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td>10/17</td>
+    <td class="side-borders">Review</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>10/19</td>
+    <td class="side-borders">Midterm</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td>10/24</td>
+    <td class="side-borders" rowspan="2">Recursion</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td>10/26</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>19</td>
+    <td>10/31</td>
+    <td class="side-borders">MergeSort</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td>11/2</td>
+    <td class="side-borders">Quick Sort</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>21</td>
+    <td>11/7</td>
+    <td class="side-borders" rowspan="2">Symbol Tables / Binary Search</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>22</td>
+    <td>11/9</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>23</td>
+    <td>11/14</td>
+    <td class="side-borders">Hash Tables</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>24</td>
+    <td>11/16</td>
+    <td class="side-borders" rowspan="2">Introduction to Graphs</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>25</td>
+    <td>11/21</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>26</td>
+    <td>11/28</td>
+    <td class="side-borders">Graphs: Digraphs &amp; Dijkstra's Algorithm</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>27</td>
+    <td>11/30</td>
+    <td class="side-borders">Graphs: Prim's Algorithm</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>28</td>
+    <td>12/5</td>
+    <td class="side-borders">Review</td>
+    <td></td>
+  </tr>
+</tbody>
+</table>
+
+<h3 id="course-logistics">Course Logistics</h3>
+<ul>
+  <li>Piazza: All announcements, assignment clarifications, and slide corrections will be posted on Piazza. Make sure to check the site on a regular basis.</li>
+  <li>Office Hours:
+    <ul>
+      <li><strong>Joyce Ho</strong>: M 1:30 PM - 3:30 PM, W 9:30 AM - 12:00 PM @ MSC W414</li>
+    </ul>
+  </li>
+  <li>Textbook
+    <ul>
+      <li>(Required) <em>Algorithms (4th Edition)</em>, by Robert Sedgewick and Kevin Wayne</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="grading">Grading</h4>
+<p>Your grade will be determined by a weighted average of all the graded items. Grades may be curved (up) so that the class mean falls at least in a B range. The class median and mean for each assignment and exam will be announced so you have an idea where you stand.
+The participation element consists of short bi-weekly quizzes (unannounced), monthly surveys (on Piazza), and class coding questions (on Canvas).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Component</th>
+      <th style="text-align: left">Weight</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Programming Assignments</td>
+      <td style="text-align: left">35%</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Project</td>
+      <td style="text-align: left">15%</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Midterm (10/19 10:00-11:15 AM)</td>
+      <td style="text-align: left">15%</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Final (12/13 3:00-5:30 PM)</td>
+      <td style="text-align: left">25%</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Quizzes &amp; Participation</td>
+      <td style="text-align: left">10%</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="assignments-and-exams-policy">Assignments and Exams Policy</h4>
+<ul>
+  <li>Assignment &amp; Project:
+    <ul>
+      <li>Involve designing, coding, testing, and debugging programs.</li>
+      <li>Must be completed individually.</li>
+      <li>Assignments will be accepted up to 24 hours late with a penalty of 10%.</li>
+      <li>Assignments turned in after 24 hours will receive <strong>no credit</strong>.</li>
+    </ul>
+  </li>
+  <li>Exam:
+    <ul>
+      <li>The midterm must be taken at the required time.</li>
+      <li>Rescheduling the midterm is not permitted except in emergencies with appropriate documentation from OUE.</li>
+      <li>The final cannot be rescheduled under any circumstance.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="honor-code-and-collaboration-policy">Honor Code and Collaboration Policy</h4>
+<p>All class work is governed by the College Honor Code and Departmental Policy. It is acceptable and encouraged to discuss assignments with other students. However, all code should be written by yourself. Any code and writeup that is found to be similar is grounds for an honor code investigation.</p>
+
+<p>Every program assignment must have the following comment included at the top of the file.</p>
+<blockquote>
+  <p>/* THIS CODE IS MY OWN WORK, IT WAS WRITTEN WITHOUT CONSULTING CODE
+   WRITTEN BY OTHER STUDENTS. <em>Your_Name_Here</em> */</p>
+</blockquote>
+
+<p>An assignment will not be considered turned in without the comment.</p>
+
+<h4 id="accommodations">Accommodations</h4>
+<p>The Department of Mathematics and Computer Science at Emory supports equal access for students with disabilities. Any students needing special accommodations due to a disability should speak with someone in the Office of Disability Services and arrangements will be made.</p>
+
+
+  </article>
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+
+    
+<footer class="fixed-bottom">
+  <div class="container mt-0">
+    &copy; Copyright 2021 Joyce C Ho.
+    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
+    
+    
+  </div>
+</footer>
+
+
+
+  </body>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js" integrity="sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A==" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js" integrity="sha512-Mug9KHKmroQFMLm93zGrjhibM2z2Obg9l6qFG2qKjXEXkMp/VDkI4uju9m4QKPjWSwQ6O2qzZEnJDEeCw0Blcw==" crossorigin="anonymous"></script>
+
+  
+<!-- Mansory & imagesLoaded -->
+<script defer src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script defer src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
+
+  
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+
+</html>
