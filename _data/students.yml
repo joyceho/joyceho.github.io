@@ -1,5 +1,5 @@
 - name: Eric Lee
-  url: http://www.cs.emory.edu/~ewlee4/
+  url: https://www.cs.emory.edu/~ewlee4/
   img: /assets/img/eric.jpg
 
 - name: Huan He
@@ -7,13 +7,13 @@
   img: /assets/img/huan.jpg
 
 - name: Jing Zhang
-  url: http://jingz1.com/
+  url: https://jingz1.com/
   img: /assets/img/jing_zhang.jpg
-
-- name: Mani Sotoodeh
-  url: https://manisci.github.io
-  img: /assets/img/mani.jpg
 
 - name: Zelalem Gero
   url: https://www.linkedin.com/in/zelalem-gero
   img: /assets/img/zelalem.jpg
+
+- name: Helen Zeng
+  url: https://joyceho.github.io/group
+  img: /assets/img/helen_zeng.jpg
