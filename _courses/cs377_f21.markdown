@@ -1,0 +1,287 @@
+---
+layout: page
+title: CS 377 - Database Systems
+semester: Fall 2021
+---
+
+<h3>Overview</h3>
+<p>This is an introduction course on database systems. It introduces the fundamental concepts of the design and use of database systems. We will introduce the Entity-relationship model used to design a database. The main focus of the course will be relational database systems where we will study the relational data model and the SQL query language for accessing the data maintained by relational database systems. We will briefly cover database systems implementation, including topics such as indexing, storage management, transaction processing.</p>
+
+<h3>Contacting your Instructor</h3>
+<p>Please direct all technical questions related to the course material (e.g., assignments, lecture clarifications, etc.) to our Piazza Page. Any email regarding technical questions will be a redirected to posting on Piazza. Myself, the TAs, and your fellow students will respond there as soon as we can! For anything else (e.g., private matters, course accommodations, etc.)&nbsp;</p>
+<h3>Textbook(s):</h3>
+<ul>
+    <li>[Recommended] Fundamentals of Database Systems (6th / 7th edition), by Ramez Elmasri &amp; Shamkant B. Navathe</li>
+    <li>[Supplemental] Database Systems: The Complete Book, by Hector Garcia-Molina, Jeffrey D. Ullman, &amp; Jennifer Widom</li>
+    <li>[Supplemental] Database System Concepts, by Abraham Silberschatz, Henry Korth, &amp; S. Sudarshan</li>
+    <li>[Supplemental] Online mini-courses (<a href="https://online.stanford.edu/courses/soe-ydatabases-databases" target="_blank" rel="noopener">https://online.stanford.edu/courses/soe-ydatabases-databases</a>) by Professor Jennifer Widom at Stanford University</li>
+</ul>
+<h3>Course Grading</h3>
+<p>Your grade will be determined by a weighted average of all the graded items. Grades may be curved (up) so that the class mean falls at least in a B range. The class median, mean, and standard deviation for each assignment and exam will be announced so you have an idea where you stand. The participation element consists of monthly surveys on Piazza and class.</p>
+<table style="border-collapse: collapse;" border="1">
+    <tbody>
+        <tr>
+            <td><strong>Component</strong></td>
+            <td><strong>Weight</strong></td>
+        </tr>
+        <tr>
+            <td>5 Assignments</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <td>Final Project</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>Midterm</td>
+            <td>15%</td>
+        </tr>
+        <tr>
+            <td>Final</td>
+            <td>20%</td>
+        </tr>
+        <tr>
+            <td>Participation</td>
+            <td>10%</td>
+        </tr>
+    </tbody>
+</table>
+<h3>Assignment Policy</h3>
+<p>Assignments are designed to help you apply the concepts we discussed in class and get practical experience with database systems. They will be submitted electronically on <strong>Canvas</strong> and due at 11:59 PM ET (EDT until November 7th when we move back to EST). If it is submitted even one second after 11:59 PM, <em>it will be considered late</em>, so please submit early!</p>
+<ul>
+    <li>Unless stated otherwise, assignments are expected to be completed <strong>individually</strong>. Online resources may be consulted for guidance or debugging purposes, but students may not look up how to explicitly perform the task at hand. Students may discuss high-level problems together, but when it comes to writing down the solution, each student must <em>work alone (</em>see Honor Code below).</li>
+    <li>Do not consult with each other's code or online code. Solutions which are not your own should never be copied and pasted (from online or from a peer). This is plagiarism and <span style="text-decoration: underline;">is grounds for an honor code investigation</span>.</li>
+</ul>
+<h3>Late Assignment Policy</h3>
+<ul>
+    <li>Each student receives <strong>six</strong> "late day" tokens that can be used on any of the 6 assignments (5 regular assignments + 1 final project) throughout the semester. Each token will extend the assignment due date by 24-hours. For a single assignment, no more than 3 late day tokens may be used.</li>
+    <li>There is no need to inform the instructor or the TAs you will be using the late days. This will be automatically tracked on our part throughout the semester.</li>
+    <li>Use your late days wisely, no more late days remaining means you will receive <strong>zero credit</strong> for any late assignment.</li>
+    <li>Additional extensions on assignments will be granted with appropriate documentation from the Office of Undergraduate Education (OUE).</li>
+</ul>
+<h3>Honor Code and Collaboration Policy</h3>
+<p>All class work is governed by the<span>&nbsp;</span>
+    <a href="http://catalog.college.emory.edu/academic/policy/honor_code.html">College Honor Code</a>
+    <span>&nbsp;</span>and the<span>&nbsp;</span>
+    <a href="http://www.mathcs.emory.edu/site/undergraduate/general-information/spca.php">Department Statement of Policy on Computer Assignments</a>. While we encourage you to discuss assignments with other students, any code and writeups<span>&nbsp;</span><strong>must be written by yourself</strong>. It is not okay to share code or write code collaboratively (this includes posting and/or sharing your code publicly). Apparent copies from any source, including your colleagues and internet sites, will be referred to the Emory Honor Council. Every assignment must have a README file with the following comment:
+</p>
+<div class="page" title="Page 5">
+    <div class="layoutArea">
+        <div class="column">
+            <p>
+                <span>/* THIS CODE IS MY OWN WORK, IT WAS WRITTEN WITHOUT CONSULTING CODE WRITTEN BY OTHER STUDENTS OR COPIED FROM ONLINE RESOURCES. _Your_Name_Here_ */ </span>
+            </p>
+            <p>
+                <span>An assignment will not be considered turned in without the comment.</span>
+            </p>
+            <h3>Exam (Midterm &amp; Final) Policy</h3>
+            <ul>
+                <li>The midterm will be on 10/18 from 8:30 AM - 9:45 AM (class time). Rescheduling the midterm is only permitted in extenuating circumstances and/or emergencies with appropriate document from Office of Undergraduate Education (OUE).&nbsp;</li>
+                <li>The final exam time is determined by the College. In the case that a student has 3 final exams on the same calendar date, arrangements for an alternative test time must be made before [date TBD]. In the event of emergencies or extenuating circumstances, arrangements will be handled on a case by case basis between the instructor, the student, and OUE.</li>
+            </ul>
+            <h3>Participation</h3>
+            <p>This consists of Piazza bi-weekly surveys, Canvas bi-weekly online quizzes, and Canvas weekly preparations.</p>
+            <ul>
+                <li>Canvas quizzes are estimated to take 15 minutes, but will have a time limit of 1 hour from the time you start it.</li>
+                <li>Weekly course preparations will be short exercises due right before class on Monday mornings and meant to refresh the material from the previous week.</li>
+                <li>No make-up will be offered except for extenuating circumstances in which arrangements will be made with proper documentation from OUE.</li>
+                <li>At the end of the semester, the lowest 2 scores (quizzes, preparations, surveys) will be dropped. This drop-out policy is intended to acommodate for any circumstances (illness, family emergencies, religious holidays, sports, etc.)</li>
+            </ul>
+            <h3>Bonus Opportunities</h3>
+            <p>There will be 4 mechanisms for bonus opportunities.</p>
+            <ul>
+                <li><strong>Piazza participation award</strong>: The top 3 students writing the largest number of endorsed answers and/or asking the best questions on Piazza will receive a bonus point (+1%) in their class participation marks.</li>
+                <li><strong>Class evaluation response</strong>: If the class reaches an 80% completion rate for the end-of-semester course evaluations, the <em>entire class </em>will get an extra 10 points added to the assignment with the lowest grade. Note that I can only access the completion rate, and not who filled out the evaluations.</li>
+                <li><strong>Early submission bonus:&nbsp;</strong>Some assignments will have an early submission bonus that will be clearly indicated on the assignment handout.</li>
+                <li><strong>Late assignment bank</strong>: For each unused late day token remaining at the end of the semester, you will receive 5 extra points on assignment with the lowest grade.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<h3>Students with Documented Disabilities</h3>
+<p>If you have a documented disability and have anticipated barriers related to the format or requirements of this course, or presume having a disability (e.g. mental health, attention, learning, vision, hearing, physical or systemic), and are in need of accommodations for this semester, we encourage you to contact the<span>&nbsp;</span>
+    <a class="inline_disabled" href="https://accessibility.emory.edu/index.html" target="_blank" rel="noopener">Department of Accessibility Services (DAS)</a>
+    <span>&nbsp;</span>to learn more about the registration process and steps for requesting accommodations.
+</p>
+<p>If you are a student that is currently registered with DAS and have not received a copy of your accommodation notification letter within the first week of class, please notify DAS immediately. Students who have accommodations in place are encouraged to contact me during the first week of the semester, to communicate your specific needs for the course as it relates to your approved accommodations. All discussions with DAS and faculty concerning the nature of your disability remain confidential.</p>
+<h3>Lecture Schedule</h3>
+<p>The reading material listed below is optional, but it refers to Fundamentals of Database Systems (7th edition) by Ramez Elmasri &amp; Shamkant B. Navathe. The lecture plan may deviate over the course of the semester.</p>
+<table style="border-collapse: collapse;" border="1">
+    <tbody>
+        <tr>
+            <td><strong>Date</strong></td>
+            <td><strong>Topic</strong></td>
+            <td><strong>Reference</strong></td>
+            <td><strong>Assignment</strong></td>
+        </tr>
+        <tr>
+            <td>08/25</td>
+            <td>Introduction to DB &amp; Class Logistics</td>
+            <td>Chapters 1 &amp; 2</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>08/30</td>
+            <td>Relational Data Model</td>
+            <td>Chapter 5</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>09/01</td>
+            <td>Relational Algebra</td>
+            <td>Chapter 8</td>
+            <td>Assignment 1 OUT (due 09/20)</td>
+        </tr>
+        <tr>
+            <td>09/06</td>
+            <td style="text-align: center;" colspan="3">
+                <span style="color: #843fa1;">LABOR DAY -- NO CLASSES</span>
+            </td>
+        </tr>
+        <tr>
+            <td>09/08</td>
+            <td rowspan="2">Relational Algebra</td>
+            <td rowspan="2">Chapter 8</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>09/13</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>09/15</td>
+            <td>Introduction to SQL</td>
+            <td rowspan="3">Chapter 6</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>09/20</td>
+            <td rowspan="2">SQL</td>
+            <td>Assignment 2 OUT (due 10/04)</td>
+        </tr>
+        <tr>
+            <td>09/22</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>09/27</td>
+            <td rowspan="3">SQL: Advanced Queries</td>
+            <td rowspan="3">Chapter 7</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>09/29</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>10/04</td>
+            <td>Assignment 3 OUT (due 10/15)</td>
+        </tr>
+        <tr>
+            <td>10/06</td>
+            <td>NoSQL</td>
+            <td>Chapter 24</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>10/11</td>
+            <td style="text-align: center;" colspan="3">
+                <span style="color: #843fa1;">FALL BREAK - NO CLASSES</span>
+            </td>
+        </tr>
+        <tr>
+            <td>10/13</td>
+            <td style="text-align: center;" colspan="3">
+                <span style="color: #1b9e77;">Midterm Review</span>
+            </td>
+        </tr>
+        <tr>
+            <td>10/18</td>
+            <td style="text-align: center;" colspan="3">
+                <span style="color: #d95f02;">MIDTERM</span>
+            </td>
+        </tr>
+        <tr>
+            <td>10/20</td>
+            <td>NoSQL</td>
+            <td>Chapter 24</td>
+            <td>Assignment 4 OUT (due 11/05)</td>
+        </tr>
+        <tr>
+            <td>10/25</td>
+            <td rowspan="2">Database Design</td>
+            <td>Chapter 3</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>10/27</td>
+            <td>Chapter 9</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>11/01</td>
+            <td rowspan="2">Database Normalization</td>
+            <td rowspan="2">Chapter 14</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>11/03</td>
+            <td>Assignment 5 OUT (due 11/19)</td>
+        </tr>
+        <tr>
+            <td>11/08</td>
+            <td>HTML &amp; JavaScript</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>11/10</td>
+            <td>JavaScript</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>11/15</td>
+            <td rowspan="2">Indexing</td>
+            <td>Chapter 16</td>
+            <td>Final Project OUT (due 12/07)</td>
+        </tr>
+        <tr>
+            <td>11/17</td>
+            <td>Chapter 17</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>11/22</td>
+            <td>Introduction to Query Processing&nbsp;</td>
+            <td>Chapter 18</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>11/24</td>
+            <td style="text-align: center;" colspan="3">
+                <span style="color: #843fa1;">THANKSGIVING RECESS -- NO CLASS</span>
+            </td>
+        </tr>
+        <tr>
+            <td>11/29</td>
+            <td>Introduction to Transaction Management</td>
+            <td>Chapter 20</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>12/01</td>
+            <td>SQL vs NOSQL</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>12/06</td>
+            <td style="text-align: center;" colspan="3">
+                <span style="color: #1b9e77;">Review</span>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>
