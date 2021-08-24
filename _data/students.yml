@@ -2,6 +2,10 @@
   url: http://www.cs.emory.edu/~ewlee4/
   img: /assets/img/eric.jpg
 
+- name: Helen Zeng
+  url: https://joyceho.github.io/group
+  img: /assets/img/helen_zeng.jpg
+
 - name: Huan He
   url: https://hehuannb.github.io
   img: /assets/img/huan.jpg
@@ -10,10 +14,11 @@
   url: https://jingz1.com/
   img: /assets/img/jing_zhang.jpg
 
+- name: Kevin Wu
+  url: https://www.linkedin.com/in/kevin-wu-798a47201
+  img: /assets/img/kevin_wu.jpg
+
 - name: Zelalem Gero
   url: https://www.linkedin.com/in/zelalem-gero
   img: /assets/img/zelalem.jpg
 
-- name: Helen Zeng
-  url: https://joyceho.github.io/group
-  img: /assets/img/helen_zeng.jpg
