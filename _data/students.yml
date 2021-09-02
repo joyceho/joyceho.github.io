@@ -1,3 +1,7 @@
+- name: Austin Cai
+  url: http://linkedin.com/in/jinghao-austin-cai-63b834195
+  img: /assets/img/austin_cai.jpg
+
 - name: Eric Lee
   url: http://www.cs.emory.edu/~ewlee4/
   img: /assets/img/eric.jpg
@@ -17,6 +21,10 @@
 - name: Kevin Wu
   url: https://www.linkedin.com/in/kevin-wu-798a47201
   img: /assets/img/kevin_wu.jpg
+
+- name: Leo Sheng
+  url: https://www.linkedin.com/in/jiasheng-sheng-1156641bb/
+  img: /assets/img/leo_sheng.jpg
 
 - name: Zelalem Gero
   url: https://www.linkedin.com/in/zelalem-gero
