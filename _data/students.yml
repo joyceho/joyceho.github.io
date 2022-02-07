@@ -1,7 +1,3 @@
-- name: Austin Cai
-  url: http://linkedin.com/in/jinghao-austin-cai-63b834195
-  img: /assets/img/austin_cai.jpg
-
 - name: Carrie Gu
   url: https://www.linkedin.com/in/carrie-gu-927378218/
   img: /assets/img/carrie_gu.jpg
@@ -33,6 +29,10 @@
 - name: Leo Sheng
   url: https://www.linkedin.com/in/jiasheng-sheng-1156641bb/
   img: /assets/img/leo_sheng.jpg
+
+- name: Ruby Wu
+  url: https://www.linkedin.com/in/yunjie-wu-8a67a722a/
+  img: /assets/img/ruby_wu.jpg
 
 - name: Samantha Lin
   url: https://seraclin.wordpress.com/
