@@ -2,8 +2,8 @@
 layout: page
 title: afa
 description: Detecting adverse outcomes from atrial fibrillation ablation
-img: /assets/img/af.png
-importance: 7
+img: /assets/img/proj/af.png
+importance: 5
 ---
 
 Atrial fibrillation patients are costly to the health system and often have significant health consequences. Many patients seek out atrial fibrillation ablation to improve quality of life yet this procedure has modest success rates. This project looks to provide a better understanding of patient factors to inform patient selection for this procedure.
