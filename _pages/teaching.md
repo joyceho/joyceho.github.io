@@ -2,7 +2,7 @@
 layout: page
 permalink: /courses/
 title: courses
-semesters: [Fall 2019, Fall 2018, Spring 2018, Fall 2017, Spring 2017, Spring 2016]
+semesters: [Spring 2022, Fall 2021, Fall 2019, Fall 2018, Spring 2018, Fall 2017, Spring 2017, Spring 2016]
 nav: true
 nav_order: 6
 ---
