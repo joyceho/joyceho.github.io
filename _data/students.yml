@@ -6,14 +6,6 @@
   url: http://www.cs.emory.edu/~ewlee4/
   img: /assets/img/eric.jpg
 
-- name: Helen Zeng
-  url: https://www.linkedin.com/in/helen-zeng-a0b71a221/
-  img: /assets/img/helen_zeng.jpg
-
-- name: Huan He
-  url: https://hehuannb.github.io
-  img: /assets/img/huan.jpg
-
 - name: Jerry Zhang
   url: https://www.linkedin.com/in/jerry-zhang-5463a1142/
   img: /assets/img/jerry_zhang.png
@@ -25,10 +17,6 @@
 - name: Kevin Wu
   url: https://www.linkedin.com/in/kevin-wu-798a47201
   img: /assets/img/kevin_wu.jpg
-
-- name: Leo Sheng
-  url: https://www.linkedin.com/in/jiasheng-sheng-1156641bb/
-  img: /assets/img/leo_sheng.jpg
 
 - name: Ruby Wu
   url: https://www.linkedin.com/in/yunjie-wu-8a67a722a/

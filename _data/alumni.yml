@@ -1,58 +1,88 @@
+- name: Helen Zeng
+  url: https://www.linkedin.com/in/helen-zeng-a0b71a221/
+  job: Master student, Yale University
+  year: BS 2022
+
+- name: Leo Sheng
+  url: https://www.linkedin.com/in/jiasheng-sheng-1156641bb/
+  job: Master student, Carnegie Mellon University
+  year: BS 2022
+
+- name: Huan He
+  url: https://hehuannb.github.io
+  job: Postdoctoral Researcher, Harvard University
+  year: PhD 2022
+
 - name: Zelalem Gero
   url: https://www.linkedin.com/in/zelalem-gero
   job: Microsoft Research
+  year: PhD 2021
 
 - name: Mani Sotoodeh
   url: https://manisci.github.io
   job: Postdoctoral Fellow, University of Montreal
+  year: PhD 2021
 
 - name: Jing Ma
   url: https://sites.google.com/view/jma78/home
   job: Facebook
+  year: PhD 2021
 
 - name: Wenqin Dong
   url: https://www.linkedin.com/in/wenqin-cynthia-dong-62090814b/
-  job: Master student, CMU
+  job: Master student, Carnegie Mellon University
+  year: BS 2020
 
 - name: Yilin Dong
   url: https://www.linkedin.com/in/elaine-dong-dyl/
-  job: Master student, CMU
+  job: Master student, Carnegie Mellon University
+  year: BS 2020
 
 - name: Colin Jiang
   url: https://colin-jiang.github.io/
   job: TBD
+  year: BS 2020
 
 - name: Bonggun Shin
   url: https://bgshin.github.io/
   job: Deargen Incorporated
+  year: PhD 2020
 
 - name: Sihan Yue
   url: https://www.linkedin.com/in/sihan-yue-11215b7b/
-  job: Master student, CMU
+  job: Master student, Carnegie Mellon University
+  year: BS 2019
 
 - name: Tianhui Mao
   url: https://www.linkedin.com/in/tianhui-millie-mao-b78bb1170
   job: Master student, MIT
+  year: BS 2019
 
 - name: Tim Davidson
   url: https://www.linkedin.com/in/timothy-davidson-585367173/
   job: Accenture
+  year: BA 2019
 
 - name: Jian Chen
   job: Master student, University of Southern California
+  year: BA 2018
 
 - name: Junyuan Ke
   url: http://junyuanke.com/
   job: PhD student, UT Austin
+  year: BA 2018
 
 - name: Weixing Tang
   url: http://trevort.info/
   job: Master student, Georgia Tech
+  year: BS 2018
 
 - name: Zining Wang
   url: http://wangzining.github.io/
   job: Master student, UC San Diego
+  year: BA 2017
 
 - name: Jiayu Yao
   url: https://www.seas.harvard.edu/directory/jiy328
-  job: PhD student, Harvard
+  job: PhD student, Harvard University
+  year: BA 2017
