@@ -1,7 +1,7 @@
 ---
 layout: page
 title: sodohku
-description: Social determinants of health knowledge unlocked
+description: Aequitas - Unlocking Social determinants of health knowledge
 img: /assets/img/proj/sodohku.png
 importance: 4
 
@@ -15,7 +15,7 @@ importance: 4
 
 This project focuses on developing a "social determinants of health insight tool" using novel but widely available data that can be linked to patient electronic health records. The tool will be used to potentially improve a provider’s ability to tailor clinical recommendations for optimal management of patients with cardiovascular conditions.
 
-This is a collaboration with [Shivani Patel](https://diabetes.emory.edu/people/faculty/patel.html).
-The project is supported by the Johnson & Johnson Quickfire Challenge.
+This is a collaboration with [Shivani Patel](https://diabetes.emory.edu/people/faculty/patel.html) and [Alanna Morris](https://med.emory.edu/departments/medicine/about-us/profile/?u=AAMORR3).
+The project is supported by the Johnson & Johnson Quickfire Challenge and the National Science Foundation (NSF) CAREER award number IIS-#2145411.
 
 
