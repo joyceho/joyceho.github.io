@@ -25,3 +25,4 @@ I am always looking for students (undergraduate, masters, and PhD). Please see m
 
 <!-- My research involves the development of novel data mining and machine learning algorithms to address problems in healthcare. She has papers in premier journals and conferences across both computer science and clinical venues including KDD, AISTATS, TKDD, AMIA, JMLR, and JBI. Her work received the best paper award at the 2017 AMIA Joint Summits on Translational Science. She also co-founded a successful healthcare analytics company (Accordion Health) and previously worked at Lawrence Livermore National Laboratory. -->
 
+
