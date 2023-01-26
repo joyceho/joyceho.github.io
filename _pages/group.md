@@ -52,7 +52,6 @@ We are always looking for motivated and hard-working students (graduate and unde
 {% endif %}
 
 
-
 ## Alumni
 
 Graduated members of the group and their first stop post-graduation.
