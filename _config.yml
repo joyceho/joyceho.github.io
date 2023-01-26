@@ -12,16 +12,11 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-<<<<<<< HEAD
 keywords: # leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
-
-=======
-
 url:  # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
->>>>>>> bf65f69 (Fixing webpage to track changes in source material)
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
@@ -47,7 +42,7 @@ repo_trophies:
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-rss_icon: true
+rss_icon: false
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -72,7 +67,6 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # -----------------------------------------------------------------------------
 # Social integration
 # -----------------------------------------------------------------------------
-<<<<<<< HEAD
 github_username: joyceho # your GitHub user name
 gitlab_username: # your GitLab user name
 twitter_username: joycehoUT # your Twitter handle
@@ -82,13 +76,6 @@ telegram_username: # your Telegram user name
 scholar_userid: DrUBb5sAAAAJ # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
-=======
-
-github_username: joyceho # your GitHub user name
-twitter_username: joycehoUT # your Twitter handle
-linkedin_username: # your LinkedIn user name
-scholar_userid: DrUBb5sAAAAJ # your Google Scholar ID
->>>>>>> bf65f69 (Fixing webpage to track changes in source material)
 orcid_id: # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
@@ -125,51 +112,6 @@ panelbear_analytics:  # panelbear analytics site ID (format: XXXXXXXXX)
 google_site_verification:  # your google-site-verification ID (Google Search Console)
 bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 
-<<<<<<< HEAD
-# -----------------------------------------------------------------------------
-# Blog
-# -----------------------------------------------------------------------------
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_nav_title: # your blog must have a title for it to be displayed in the nav bar
-blog_description: a simple whitespace theme for academics
-permalink: /blog/:year/:title/
-
-# Pagination
-pagination:
-  enabled: true
-
-related_blog_posts:
-  enabled: true
-  max_related: 5
-
-# Giscus comments (RECOMMENDED)
-# Follow instructions on https://giscus.app/ to setup for your repo to fill out
-# the information below.
-giscus:
-  repo: alshedivat/al-folio      # <your-github-user-name>/<your-github-repo-name>
-  repo_id: MDEwOlJlcG9zaXRvcnk2MDAyNDM2NQ==
-  category: Comments             # name of the category under which discussions will be created
-  category_id: DIC_kwDOA5PmLc4CTBt6
-  mapping: title                 # identify discussions by post title
-  strict: 1                      # use strict identification mode
-  reactions_enabled: 1           # enable (1) or disable (0) emoji reactions
-  input_position: bottom         # whether to display input form below (bottom) or above (top) the comments
-  theme: preferred_color_scheme  # name of the color scheme (preferred works well with al-folio light/dark mode)
-  emit_metadata: 0
-  lang: en
-
-# Disqus comments (DEPRECATED)
-disqus_shortname: al-folio # put your disqus shortname
-# https://help.disqus.com/en/articles/1717111-what-s-a-shortname
-
-# External sources.
-# If you have blog posts published on medium.com or other exteranl sources,
-# you can display them in your blog by adding a link to the RSS feed.
-external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-=======
->>>>>>> bf65f69 (Fixing webpage to track changes in source material)
 
 # -----------------------------------------------------------------------------
 # Collections
@@ -190,11 +132,7 @@ collections:
   tutorials:
     output: true
     permalink: /tutorial/:path/
-<<<<<<< HEAD
-news_scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-=======
-
->>>>>>> bf65f69 (Fixing webpage to track changes in source material)
+news_scrollable: false # adds a vertical scroll bar if there are more than 3 news items
 news_limit: 10
 
 # -----------------------------------------------------------------------------
@@ -232,7 +170,6 @@ plugins:
   - jekyll-link-attributes
   - jekyll-twitter-plugin
   - jemoji
-<<<<<<< HEAD
 
 # Sitemap settings
 defaults:
@@ -266,9 +203,6 @@ jekyll-archives:
     category: '/blog/category/:name/'
 
 display_tags: ['formatting', 'images', 'links', 'math', 'code'] # this tags will be dispalyed on the front page of your blog
-=======
-=======
->>>>>>> bf65f69 (Fixing webpage to track changes in source material)
   # - bootstrap
   # - material-sass
 
@@ -280,10 +214,6 @@ scholar:
 
   last_name: Ho
   first_name: [Joyce C, Joyce, J.C.]
-<<<<<<< HEAD
-=======
-
->>>>>>> bf65f69 (Fixing webpage to track changes in source material)
   style: apa
   locale: en
 
@@ -311,7 +241,7 @@ badges: # Display different badges for your pulications
 filtered_bibtex_keywords: [abbr, abstract, arxiv, bibtex_show, html, pdf, selected, supp, blog, code, poster, slides, website, preview, altmetric]
 
 # Maximum number of authors to be shown for each publication (more authors are visible on click)
-max_author_limit: 3  # leave blank to always show all authors
+max_author_limit:  # leave blank to always show all authors
 more_authors_animation_delay: 10  # more authors are revealed on click using animation; smaller delay means faster animation
 
 
