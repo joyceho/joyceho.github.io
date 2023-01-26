@@ -4,6 +4,7 @@ permalink: /group/
 title: group
 description: Practical Data Mining & Exploration Lab
 nav: true
+nav_order: 1
 ---
 
 <div class="row justify-content-sm-center">
@@ -46,8 +47,11 @@ We are always looking for motivated and hard-working students (graduate and unde
 {% assign k = i | modulo:3 %}
 {% if k == 0 %}
 </div>
-{% endif %}    
+{% endif %}
 {% endfor %}
+{% if k > 0 %}
+</div>
+{% endif %}
 
 
 ## Alumni
