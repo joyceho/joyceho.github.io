@@ -39,7 +39,6 @@ repo_trophies:
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-
 rss_icon: false
 
 # -----------------------------------------------------------------------------
@@ -133,6 +132,7 @@ openpanel_analytics: # your Openpanel analytics client ID (format: XXXXXXXX-XXXX
 google_site_verification: # your google-site-verification ID (Google Search Console)
 bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 
+<<<<<<< HEAD
 # -----------------------------------------------------------------------------
 # Blog
 # -----------------------------------------------------------------------------
@@ -189,6 +189,8 @@ newsletter:
   endpoint: # your loops endpoint (e.g., https://app.loops.so/api/newsletter-form/YOUR-ENDPOINT)
   # https://loops.so/docs/forms/custom-form
 
+=======
+>>>>>>> 3ff350f5 (Update to v0.8 rebasing plus cleaning up bib)
 
 # -----------------------------------------------------------------------------
 # Collections
@@ -210,6 +212,7 @@ collections:
   tutorials:
     output: true
     permalink: /tutorial/:path/
+<<<<<<< HEAD
 
 announcements:
   enabled: true
@@ -217,6 +220,9 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
   
 news_scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+=======
+news_scrollable: false # adds a vertical scroll bar if there are more than 3 news items
+>>>>>>> 3ff350f5 (Update to v0.8 rebasing plus cleaning up bib)
 news_limit: 10
 
 # -----------------------------------------------------------------------------
@@ -322,8 +328,14 @@ jekyll-archives:
   books:
     enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
 
+<<<<<<< HEAD
 display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
 display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
+=======
+display_tags: ['formatting', 'images', 'links', 'math', 'code'] # this tags will be dispalyed on the front page of your blog
+  # - bootstrap
+  # - material-sass
+>>>>>>> 3ff350f5 (Update to v0.8 rebasing plus cleaning up bib)
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
@@ -332,7 +344,10 @@ display_categories: ["external-services"] # these categories will be displayed o
 scholar:
   last_name: Ho
   first_name: [Joyce C, Joyce, J.C.]
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3ff350f5 (Update to v0.8 rebasing plus cleaning up bib)
   style: apa
   locale: en
 
