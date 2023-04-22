@@ -24,7 +24,6 @@ We analyze and mine complex, heterogenous data to explore, characterize, and und
 We are always looking for motivated and hard-working students (graduate and undergraduate students) to do research with us. If you are at Emory and interested in joining our lab, send an e-mail with the subject line “More Data More Fun” and attach your CV/resume, unofficial transcript, as well as a brief description of your particular research interest to Joyce. If your email does not have the subject line, your email may not be read. We generally only consider those who have taken either Undergraduate Machine Learning (CS334) or Graduate Machine Learning (CS534). If you are not at Emory yet, please apply to the Emory (e.g., graduate CSI program) first.
 
 
-
 ## Members
 
 {% assign i = 0 %}
