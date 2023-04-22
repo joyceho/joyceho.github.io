@@ -24,7 +24,7 @@ nav_order: 1
 
 We analyze and mine complex, heterogenous data to explore, characterize, and understand the underlying states / processes. Our approaches are based on statistical machine learning and data mining that work on a variety of real-life applications with a focus on healthcare applications.
 
-We are always looking for motivated and hard-working students (graduate and undergraduate students) to do research with us. If you are at Emory and interested in joining our lab, send an e-mail titled “More Data More Fun” with your CV, unofficial transcript, and your particular research interest to Joyce Ho. Note that we will only consider those who have taken either Undergraduate Machine Learning (CS334) or Graduate Machine Learning (CS534). If you are not at Emory yet, please apply to the CSI graduate program first.
+We are always looking for motivated and hard-working students (graduate and undergraduate students) to do research with us. If you are at Emory and interested in joining our lab, send an e-mail with the subject line “More Data More Fun” and attach your CV/resume, unofficial transcript, as well as a brief description of your particular research interest to Joyce. If your email does not have the subject line, your email may not be read. We generally only consider those who have taken either Undergraduate Machine Learning (CS334) or Graduate Machine Learning (CS534). If you are not at Emory yet, please apply to the Emory (e.g., graduate CSI program) first.
 
 
 ## Members
