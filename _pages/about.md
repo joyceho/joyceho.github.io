@@ -2,8 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Associate Professor,<a href="cs.emory.edu">CS@Emory University</a>.
-
+subtitle: Associate Professor, <a href="https://cs.emory.edu">CS@Emory University</a>.
 profile:
   align: right
   image: joyce.jpg
