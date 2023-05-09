@@ -25,7 +25,11 @@
     
 - name: Jerry Zhang
   url: https://www.linkedin.com/in/jerry-zhang-5463a1142/
+<<<<<<< HEAD
   job: CEvent
+=======
+  job: TBD
+>>>>>>> 3aba5eb5 (Adding emory honors)
   year: BS 2023
 
 - name: Jing Zhang
