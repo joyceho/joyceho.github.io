@@ -8,18 +8,15 @@ nav_order: 1
 ---
 
 <div class="row justify-content-sm-center">
-    <div class="col-sm-4 mt-3 mt-md-0">
+    <div class="col-sm-6 mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/group_s2023.png' | relative_url }}">
+    </div>
+    <div class="col-sm-6 mt-3 mt-md-0">
         <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/group_s2022.jpg' | relative_url }}">
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/group_s2021.jpg' | relative_url }}">
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/group_w2018.jpg' | relative_url }}">
     </div>
 </div>
 <div class="caption">
-        Group photos from Spring 2022 (left), Spring 2021 (middle), and Winter 2018 (right).
+        Group photos from Spring 2023 (left) and Spring 2022 (right).
 </div>
 
 We analyze and mine complex, heterogenous data to explore, characterize, and understand the underlying states / processes. Our approaches are based on statistical machine learning and data mining that work on a variety of real-life applications with a focus on healthcare applications.
