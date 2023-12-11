@@ -1,10 +1,6 @@
 - name: Chase Fensore
   url: https://www.linkedin.com/in/chase-fensore/
   img: /assets/img/chase_fensore.jpg
-  
-- name: Eric Lee
-  url: http://www.cs.emory.edu/~ewlee4/
-  img: /assets/img/eric.jpg
 
 - name: Helen Zeng
   url: https://www.linkedin.com/in/helen-zeng-a0b71a221/
@@ -13,6 +9,10 @@
 - name: Jing Zhang
   url: https://jingz1.com/
   img: /assets/img/jing_zhang.jpg
+
+- name: Mark Si
+  url: https://www.linkedin.com/in/junyuan-si/
+  img: /assets/img/mark_si.jpg
 
 - name: Ran Xu
   url: https://ritaranx.github.io/
