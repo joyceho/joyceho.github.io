@@ -1,3 +1,8 @@
+- name: Eric Lee
+  url: http://www.cs.emory.edu/~ewlee4/
+  job: Postdoctoral Fellow, Oak Ridge National Laboratory
+  year: PhD 2023
+
 - name: Carrie Gu
   url: https://www.linkedin.com/in/carrie-gu-927378218/
   job: Master student, Stanford University
@@ -15,7 +20,7 @@
     
 - name: Jerry Zhang
   url: https://www.linkedin.com/in/jerry-zhang-5463a1142/
-  job: TBD
+  job: CEvent
   year: BS 2023
 
 - name: Jing Zhang
