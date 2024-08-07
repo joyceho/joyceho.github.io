@@ -26,30 +26,30 @@ We are always looking for motivated and hard-working students (graduate and unde
 
 ## Members
 
-{% assign i = 0 %}
-{% for member in site.data.students %}
-{% assign k = i | modulo:3 %}
-{% if k == 0 %}
-<div class="row">
-{% endif %}    
-<div class="pradax">
-    <div class="thumbnail">
-        {{ member.name }}
-        <a href="{{ member.url }}">
-        <img class="thumbnail rounded-circle" src="{{ member.img | relative_url }}"/>
-        </a>
-    </div>
+{% assign sorted_students = site.data.students| sort: "name" %}
+<div class="row row-cols-1 row-cols-md-4">
+    {% for member in site.data.students %}
+        <div class="col">
+            <div class="card-body text-center">
+                <h6 class="card-title">{{ member.name }}</h6>
+            </div>
+            <a href="{{ member.url }}">
+            <div class="card h-50 hoverable">
+            {% if member.img  %}
+                {%
+                include figure.liquid
+                loading="eager"
+                path=member.img
+                sizes = "100px"
+                alt="student thumbnail"
+                class="card-img-bottom"
+                %}
+            {% endif %}
+            </div>
+            </a>
+        </div>
+        {% endfor %}
 </div>
-{% assign i = i | plus:1 %}
-{% assign k = i | modulo:3 %}
-{% if k == 0 %}
-</div>
-{% endif %}
-{% endfor %}
-{% if k > 0 %}
-</div>
-{% endif %}
-
 
 ## Alumni
 

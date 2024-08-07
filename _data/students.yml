@@ -10,10 +10,6 @@
   url: https://www.linkedin.com/in/helen-zeng-a0b71a221/
   img: /assets/img/helen_zeng.jpg
 
-- name: Mark Si
-  url: https://www.linkedin.com/in/junyuan-si/
-  img: /assets/img/mark_si.jpg
-
 - name: Miriam Asare-Baiden
   url: https://www.linkedin.com/in/miriam-asare-baiden-a21303142
   img: /assets/img/miriam_asarebaiden.jpg
@@ -26,8 +22,10 @@
   url: https://www.linkedin.com/in/tiantian-li-31128022b/
   img: /assets/img/tiantian_li.jpg
 
-
 - name: William Hao
   url: https://github.com/yhao-william
   img: /assets/img/yijie_hao.jpg
 
+- name: Yella Diekmann
+  url: https://www.linkedin.com/in/yella-diekmann-2a0726216/
+  img: /assets/img/yella_diekmann.jpg
