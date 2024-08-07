@@ -12,6 +12,7 @@ Spatiotemporal analyses can enable many discoveries including reducing traffic c
 
 This was an ongoing collaboration with [Li Xiong](http://www.mathcs.emory.edu/~lxiong/) and [Jimeng Sun](http://sunlab.org/). The project was supported by the National Science Foundation (NSF) under award number IIS-#1838200. 
 
+
 <div class="img_row">
     <img class="col three left" src="{{ site.baseurl }}/assets/img/times.png" alt="" title="phenotensor"/>
 </div>

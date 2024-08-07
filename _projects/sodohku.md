@@ -17,4 +17,3 @@ This project focuses on developing a "social determinants of health insight tool
 
 This is a collaboration with [Shivani Patel](https://diabetes.emory.edu/people/faculty/patel.html) and [Alanna Morris](https://med.emory.edu/departments/medicine/about-us/profile/?u=AAMORR3).
 The project is supported by the Johnson & Johnson Quickfire Challenge and the National Science Foundation (NSF) CAREER award number IIS-#2145411.
-
