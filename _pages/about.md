@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Associate Professor, <a href="https://cs.emory.edu">CS@Emory University</a>.<br>Director of Graduate Studies, <a href="https://computerscience.emory.edu/graduate-ms/index.html">CS MS Program</a>.
+subtitle: Winship Distinguished Research Professor.<br>Associate Professor, <a href="https://cs.emory.edu">CS@Emory University</a>.<br>Director of Graduate Studies, <a href="https://computerscience.emory.edu/graduate-ms/index.html">CS MS Program</a>.
 
 profile:
   align: right

@@ -6,3 +6,22 @@
 .pradax .thumbnail a span h1 { font-size: 1.5rem; margin: 0; }
 .pradax .thumbnail a span p { color: #e8e8e8; }
 .pradax .thumbnail a:hover span { display: block; }
+
+/* Make all student cards the same height */
+.student-card-wrapper .card {
+    height: 350px;  /* no !important needed */
+}
+
+.student-card-wrapper .card img {
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.student-card-wrapper .card-body small.text-muted {
+    display: block;
+    font-size: 0.80rem;
+    margin-top: 0.25rem;
+    font-style: italic;
+}

@@ -1,3 +1,7 @@
+- name: Allison Ng
+  url: https://www.linkedin.com/in/allison-ng-bbbb1a218/
+  img: /assets/img/allison_ng.png
+
 - name: Chase Fensore
   url: https://www.linkedin.com/in/chase-fensore/
   img: /assets/img/chase_fensore.jpg
@@ -5,6 +9,11 @@
 - name: Helen Zeng
   url: https://www.linkedin.com/in/helen-zeng-a0b71a221/
   img: /assets/img/helen_zeng.jpg
+  co_advised_with: Dr. Li Xiong
+
+- name: Jason Fan
+  url: www.linkedin.com/in/fan-jason
+  img: /assets/img/jason_fan.jpeg
 
 - name: Miriam Asare-Baiden
   url: https://www.linkedin.com/in/miriam-asare-baiden-a21303142
@@ -13,6 +22,7 @@
 - name: Ran Xu
   url: https://ritaranx.github.io/
   img: /assets/img/ran_xu.jpg
+  co_advised_with: Dr. Carl Yang
 
 - name: Tiantian Li
   url: https://www.linkedin.com/in/tiantian-li-31128022b/

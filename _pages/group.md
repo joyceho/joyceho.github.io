@@ -27,28 +27,27 @@ We are always looking for motivated and hard-working students (graduate and unde
 ## Members
 
 {% assign sorted_students = site.data.students| sort: "name" %}
-<div class="row row-cols-1 row-cols-md-4">
+<div class="row row-cols-1 row-cols-md-4 student-card-wrapper">
     {% for member in site.data.students %}
-        <div class="col">
-            <div class="card-body text-center">
-                <h6 class="card-title">{{ member.name }}</h6>
-            </div>
+        <div class="col mb-4">
             <a href="{{ member.url }}">
-            <div class="card h-50 hoverable">
-            {% if member.img  %}
-                {%
-                include figure.liquid
-                loading="eager"
-                path=member.img
-                sizes = "100px"
-                alt="student thumbnail"
-                class="card-img-bottom"
-                %}
-            {% endif %}
-            </div>
+                <div class="card hoverable">
+                    {% if member.img %}
+                        <img src="{{ member.img | relative_url }}" 
+                             alt="{{ member.name }}" 
+                             loading="eager"
+                             class="card-img-top">
+                    {% endif %}
+                    <div class="card-body text-center">
+                        <h6 class="card-title mb-0">{{ member.name }}</h6>
+                        {% if member.co_advised_with %}
+                            <small class="text-muted">co-advised with {{ member.co_advised_with }}</small>
+                        {% endif %}
+                    </div>
+                </div>
             </a>
         </div>
-        {% endfor %}
+    {% endfor %}
 </div>
 
 ## Alumni

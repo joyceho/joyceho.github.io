@@ -7,7 +7,7 @@ first_name: Joyce
 middle_name: C
 last_name: Ho
 contact_note: >
-  Contact me via email. 
+  Contact me via email at joyce.c.ho at emory dot edu. 
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
     Joyce Ho - Associate professor at Emory University.
 footer_text: >
@@ -15,7 +15,7 @@ footer_text: >
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: favicon.ico # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://joyceho.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
