@@ -6,7 +6,7 @@ subtitle: Winship Distinguished Research Professor.<br>Associate Professor, <a h
 
 profile:
   align: right
-  image: joyce.jpg
+  image: joyce.png
   image_circular: true # crops the image to make it circular
   more_info: >
     <p>400 Dowman Dr</p>
@@ -33,3 +33,7 @@ I am an associate professor in the Computer Science Department at Emory Universi
 My research focuses on the development of novel data mining and machine learning algorithms to address problems in healthcare. Recent projects include identifying patient subgroups or phenotypes, integration of new streams of data, fusing different modalities of data (e.g., structured medical codes and unstructured text), and dealing with conflicting expert annotations.
 
 I am always looking for students (undergraduate, masters, and PhD). Please see my [group page](group/) for more info about contacting me.
+
+<div style="clear: both; border-left: 4px solid var(--global-theme-color); padding: 10px 15px; background-color: var(--global-code-bg-color); margin-top: 1rem; font-size: 0.9rem; line-height: 1.6;">
+  <strong>Scam Warning:</strong> Fraudulent job postings and emails are impersonating me via <code>joyce.c.ho@outlook.com</code>. This is not me! My official email ends in <strong>@emory.edu</strong>. Please disregard any such messages and report them.
+</div>
