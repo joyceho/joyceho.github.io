@@ -6,7 +6,7 @@ subtitle: Winship Distinguished Research Professor.<br>Associate Professor, <a h
 
 profile:
   align: right
-  image: joyce.png
+  image: joyce_2026.png
   image_circular: true # crops the image to make it circular
   more_info: >
     <p>400 Dowman Dr</p>
