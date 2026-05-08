@@ -29,8 +29,6 @@ Machine learning is an exciting field of computer science that impacts many appl
       <td>1/10</td>
       <td class="side-borders">Overview &amp; Course Logistics</td>
       <td class="side-borders">
-        <a href="slide/1-intro.pdf">Lecture 1</a><br>
-        <a href="code/iPythonIntro.ipynb">iPythonIntro.ipynb</a>
       </td>
       <td class="side-borders">
         <ul>
@@ -45,15 +43,8 @@ Machine learning is an exciting field of computer science that impacts many appl
       <td>1/12</td>
       <td class="side-borders">Random Variables &amp; Probability Review</td>
       <td class="side-borders">
-        <a href="slide/2-prob-review.pdf">Lecture 2</a><br>
-        <a href="slide/2-bayesian-methods.pdf">Bayesian Review</a>
       </td>
       <td class="side-borders">
-        <ul>
-          <li><a href="note/cs229-prob.pdf">Probability theory review</a> from Stanford's machine learning class</li>
-          <li>Sam Roweis's <a href="note/probx.pdf">probability review notes</a></li>
-          <li>Ingmar Land's <a href="note/prob-cheat-sheet.pdf">probability cheat sheet</a></li>
-        </ul>
       </td>
       <td></td>
     </tr>
@@ -62,15 +53,8 @@ Machine learning is an exciting field of computer science that impacts many appl
       <td>1/17</td>
       <td class="side-borders">Linear Algebra &amp; Optimization Review</td>
       <td class="side-borders">
-        <a href="slide/3-linear-opt-review.pdf">Lecture 3</a><br>
-        <a href="code/NumpyBasics.ipynb">NumpyBasics.ipynb</a>
       </td>
       <td class="side-borders">
-        <ul>
-          <li><a href="note/cs229-linalg.pdf">Linear algebra notes</a> from Stanford's ML class</li>
-          <li>Sam Roweis's <a href="note/linear_algebra.pdf">linear algebra review notes</a></li>
-          <li>Convex optimization notes <a href="note/cs229-cvxopt.pdf">Part I</a> and  <a href="note/cs229-cvxopt2.pdf">II</a> from Stanford's machine learning class</li>
-        </ul>
       </td>
       <td></td>
     </tr>
@@ -82,10 +66,6 @@ Machine learning is an exciting field of computer science that impacts many appl
       <td>1/19</td>
       <td class="side-borders" rowspan="2">Statistical Decision Theory &amp; Linear Regression</td>
       <td class="side-borders" valign="center" rowspan="2">
-        <a href="slide/4-5-linear-reg.pdf">Lectures 4 - 5</a><br>
-        <a href="code/PandasBasics.ipynb">PandasBasics.ipynb</a><br>
-        <a href="data/Teams.csv">Teams.csv (data file)</a><br>
-        <a href="code/LinearRegression.ipynb">LinearRegression.ipynb</a>
       </td>
       <td class="side-borders" rowspan="2">
         <ul>
@@ -107,9 +87,6 @@ Machine learning is an exciting field of computer science that impacts many appl
       <td>1/26</td>
       <td class="side-borders" rowspan="2">Linear Classification</td>
       <td class="side-borders" valign="center" rowspan="2">
-        <a href="slide/6-7-linear-class.pdf">Lectures 6-7</a><br>
-        <a href="code/LDA.ipynb">LDA.ipynb</a><br>
-        <a href="code/LogisticRegression.ipynb">LogisticRegression.ipynb</a><br>
       </td>
       <td class="side-borders" rowspan="2">
         <ul>
@@ -118,11 +95,6 @@ Machine learning is an exciting field of computer science that impacts many appl
         </ul>
       </td>
       <td>
-        <ul>
-          <li><a href="assignment/HW1.pdf">Homework 1</a></li>
-          <li><a href="data/spam.train.dat">Spam Training Data</a></li>
-          <li><a href="data/spam.test.dat">Spam Testing Data</a></li>
-        </ul>
       </td>
     </tr>
     <tr>
@@ -138,7 +110,6 @@ Machine learning is an exciting field of computer science that impacts many appl
       <td>2/2</td>
       <td class="side-borders">Learning Theory</td>
       <td class="side-borders">
-        <a href="slide/8-learning.pdf">Lecture 8</a>
       </td>
       <td class="side-borders" rowspan="4">
         <ul>
@@ -154,8 +125,6 @@ Machine learning is an exciting field of computer science that impacts many appl
       <td>2/7</td>
       <td class="side-borders">Validation</td>
       <td class="side-borders">
-        <a href="slide/9-validation.pdf">Lecture 9</a><br>
-        <a href="code/CrossValidation.ipynb">CrossValidation.ipynb</a>
       </td>
       <td></td>
     </tr>
@@ -164,12 +133,8 @@ Machine learning is an exciting field of computer science that impacts many appl
       <td>2/9</td>
       <td class="side-borders" rowspan="2">Bootstrap &amp; Model Selection</td>
       <td class="side-borders" rowspan="2">
-        <a href="slide/10-11-ms-bootstrap.pdf">Lectures 10-11</a>
       </td>
       <td>
-        <ul>
-          <li><a href="assignment/HW2.pdf">Homework 2</a></li>
-        </ul>
       </td>
     </td></tr>
     <tr>
@@ -185,8 +150,6 @@ Machine learning is an exciting field of computer science that impacts many appl
       <td>2/16</td>
       <td class="side-borders" rowspan="2">Boosting, Trees &amp; Additive Models</td>
       <td class="side-borders" rowspan="2">
-        <a href="slide/12-13-boosting-trees.pdf">Lectures 12-13</a><br>
-        <a href="code/DecisionTree.ipynb">DecisionTree.ipynb</a>
       </td>
       <td class="side-borders" rowspan="2">
         <ul>
@@ -207,7 +170,6 @@ Machine learning is an exciting field of computer science that impacts many appl
       <td>2/23</td>
       <td class="side-borders">Ensembles &amp; Random Forests</td>
       <td class="side-borders">
-        <a href="slide/14-ensembles.pdf">Lecture 14</a>
       </td>
       <td class="side-borders">
         <ul>
@@ -222,8 +184,6 @@ Machine learning is an exciting field of computer science that impacts many appl
       <td>2/28</td>
       <td class="side-borders" rowspan="2">Support Vector Machines</td>
       <td class="side-borders" rowspan="2">
-        <a href="slide/15-16-svm.pdf">Lectures 15-16</a><br>
-        <a href="code/SVM.ipynb">SVM.ipynb</a>
       </td>
       <td class="side-borders" rowspan="2">
         <ul>
@@ -235,10 +195,6 @@ Machine learning is an exciting field of computer science that impacts many appl
         </ul>
       </td>
       <td>
-        <ul>
-          <li><a href="assignment/HW3.pdf">Homework 3</a></li>
-          <li><a href="data/allhyper.data">allhyper.data</a></li>
-        </ul>
       </td>
     </tr>
     <tr>
@@ -254,7 +210,6 @@ Machine learning is an exciting field of computer science that impacts many appl
       <td>3/14</td>
       <td class="side-borders" rowspan="2">Neural Networks</td>
       <td class="side-borders" rowspan="2">
-        <a href="slide/17-18-nn.pdf">Lectures 17-18</a><br>
         <a href="http://playground.tensorflow.org/">Neural Network Playground</a><br>
         <a href="http://scs.ryerson.ca/~aharley/vis/conv/">Handwritten Digit Visualization</a><br>
         <a href="http://scikit-learn.org/stable/_downloads/plot_mnist_filters.ipynb">plot_mnist_filters.ipynb</a> by Scikit-learn
@@ -278,7 +233,6 @@ Machine learning is an exciting field of computer science that impacts many appl
       <td>3/21</td>
       <td class="side-borders">K Nearest Neighbors</td>
       <td class="side-borders">
-        <a href="slide/19-knn.pdf">Lecture 19</a>
       </td>
       <td class="side-borders">
         <ul>
@@ -286,7 +240,6 @@ Machine learning is an exciting field of computer science that impacts many appl
         </ul>
       </td>
       <td>
-        <a href="assignment/HW4.pdf">Homework 4</a>
       </td>
     </tr>
     <tr>
@@ -308,8 +261,6 @@ Machine learning is an exciting field of computer science that impacts many appl
       <td>3/28</td>
       <td class="side-borders">Dimensionality Reduction</td>
       <td class="side-borders">
-        <a href="slide/21-pca.pdf">Lecture 21</a><br>
-        <a href="code/DimensionalityReduction.ipynb">DimensionalityReduction.ipynb</a>
       </td>
       <td class="side-borders" rowspan="2">
         <ul>
@@ -325,7 +276,6 @@ Machine learning is an exciting field of computer science that impacts many appl
       <td>3/30</td>
       <td class="side-borders">Clustering &amp; Mixture Models</td>
       <td class="side-borders">
-        <a href="slide/22-cluster.pdf">Lecture 22</a>
       </td>
       <td></td>
     </tr>
@@ -337,7 +287,6 @@ Machine learning is an exciting field of computer science that impacts many appl
       <td>4/4</td>
       <td class="side-borders">Topic Models</td>
       <td class="side-borders">
-        <a href="slide/23-topics.pdf">Lecture 23</a>
       </td>
       <td class="side-borders">
         <ul>
@@ -345,10 +294,6 @@ Machine learning is an exciting field of computer science that impacts many appl
         </ul>
       </td>
       <td>
-        <ul>
-          <li><a href="assignment/HW5.pdf">Homework 5</a></li>
-          <li><a href="data/Colleges.txt">Colleges.txt</a></li>
-        </ul>
       </td>
     </tr>
     <tr>
@@ -356,7 +301,6 @@ Machine learning is an exciting field of computer science that impacts many appl
       <td>4/6</td>
       <td class="side-borders">Hidden Markov Models</td>
       <td class="side-borders">
-        <a href="slide/24-hmm.pdf">Lecture 24</a>
       </td>
       <td class="side-borders">
         <ul>
@@ -371,7 +315,6 @@ Machine learning is an exciting field of computer science that impacts many appl
       <td>4/11</td>
       <td class="side-borders">Deep Learning</td>
       <td class="side-borders">
-        <a href="slide/25-deep-learning.pdf">Lecture 25</a>
       </td>
       <td class="side-borders"></td>
       <td></td>
@@ -381,7 +324,6 @@ Machine learning is an exciting field of computer science that impacts many appl
       <td>4/13</td>
       <td class="side-borders">Recommendation Systems</td>
       <td class="side-borders">
-        <a href="slide/26-recommendation.pdf">Lecture 26</a>
       </td>
       <td class="side-borders">
         <ul>
