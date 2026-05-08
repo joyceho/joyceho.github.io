@@ -52,7 +52,6 @@ The reading material listed below is optional and the lecture plan may deviate o
       <td class="side-borders">Crash Course in Optimization and Statistics</td>
       <td class="side-borders">
         <ul>
-          <li>Convex optimization notes <a href="../cs534_s17/note/cs229-cvxopt.pdf">Part I</a> and  <a href="../cs534_s17/note/cs229-cvxopt2.pdf">II</a> from Stanford's machine learning class</li>
           <li>Rosenberg's <a href="https://davidrosenberg.github.io/mlcourse/Notes/convex-optimization.pdf">abridged notes</a></li>
         </ul>
       </td>
