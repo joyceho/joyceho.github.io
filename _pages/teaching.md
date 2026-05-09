@@ -44,9 +44,9 @@ course_groups:
               {% endif %}
             {% endfor %}
             {% if course_page %}
-              <a href="{{ course_page.url | relative_url }}" class="badge badge-pill badge-light border mr-1 mb-1" style="font-size: 0.8rem; font-weight: normal;">{{ sem }}</a>
+              <a href="{{ course_page.url | relative_url }}"><abbr class="badge rounded">{{ sem }}</abbr></a>
             {% else %}
-              <span class="badge badge-pill badge-light border mr-1 mb-1" style="font-size: 0.8rem; font-weight: normal;">{{ sem }}</span>
+              <abbr class="badge rounded">{{ sem }}</abbr>
             {% endif %}
           {% endfor %}
         </div>
