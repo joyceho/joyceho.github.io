@@ -1,7 +1,7 @@
 ---
 layout: page
-title: BOND
-description: Database integration for biodiversity — combining and making accessible widely scattered biodiversity data using deep learning
+title: Biodiversity Database Integration
+description: Database integration for biodiversity
 img: /assets/img/proj/bond.png
 importance: 4
 category: active

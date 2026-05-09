@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Diabetes Subtypes
-description: Identifying subtypes of newly diagnosed type 2 diabetes and their associated risk of complications using electronic health records
+description: Identifying subtypes of type 2 diabetes using EHRs
 img: /assets/img/proj/diabetes_subtypes.png
 importance: 3
 category: active

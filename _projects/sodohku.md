@@ -1,7 +1,7 @@
 ---
 layout: page
 title: sodohku
-description: Aequitas - Unlocking Social determinants of health knowledge
+description: Unlocking social determinants of health knowledge
 img: /assets/img/proj/sodohku.png
 importance: 1
 category: active
