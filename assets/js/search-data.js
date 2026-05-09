@@ -58,12 +58,27 @@ ninja.data = [{
           title: 'CS 171 - Introduction to Computer Science II',
           description: "",
           section: "Courses",handler: () => {
+              window.location.href = "/courses/cs171_f21.html";
+            },},{id: "courses-cs-171-introduction-to-computer-science-ii",
+          title: 'CS 171 - Introduction to Computer Science II',
+          description: "",
+          section: "Courses",handler: () => {
               window.location.href = "/courses/cs171_s22.html";
             },},{id: "courses-cs-334-machine-learning",
           title: 'CS 334 - Machine Learning',
           description: "",
           section: "Courses",handler: () => {
               window.location.href = "/courses/cs334_f19.html";
+            },},{id: "courses-cs-334-machine-learning",
+          title: 'CS 334 - Machine Learning',
+          description: "",
+          section: "Courses",handler: () => {
+              window.location.href = "/courses/cs334_f23.html";
+            },},{id: "courses-cs-334-machine-learning",
+          title: 'CS 334 - Machine Learning',
+          description: "",
+          section: "Courses",handler: () => {
+              window.location.href = "/courses/cs334_s24.html";
             },},{id: "courses-cs-377-database-systems",
           title: 'CS 377 - Database Systems',
           description: "",
@@ -94,6 +109,11 @@ ninja.data = [{
           description: "",
           section: "Courses",handler: () => {
               window.location.href = "/courses/cs534_f18.html";
+            },},{id: "courses-cs-534-machine-learning",
+          title: 'CS 534 - Machine Learning',
+          description: "",
+          section: "Courses",handler: () => {
+              window.location.href = "/courses/cs534_f23.html";
             },},{id: "courses-cs-534-machine-learning",
           title: 'CS 534 - Machine Learning',
           description: "",
@@ -247,6 +267,11 @@ ninja.data = [{
           description: "Detecting adverse outcomes from atrial fibrillation ablation",
           section: "Projects",handler: () => {
               window.location.href = "/projects/afa.html";
+            },},{id: "projects-biodiversity-db",
+          title: 'Biodiversity DB',
+          description: "Database integration for biodiversity",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/bond.html";
             },},{id: "projects-caring",
           title: 'CARING',
           description: "Chart-assessment for Real-time Investigation of Nursing and Guidance",
@@ -257,6 +282,16 @@ ninja.data = [{
           description: "Identifying subgroups using medications",
           section: "Projects",handler: () => {
               window.location.href = "/projects/cfs_cdc.html";
+            },},{id: "projects-diabetes-subtypes",
+          title: 'Diabetes Subtypes',
+          description: "Identifying subtypes of type 2 diabetes using EHRs",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/diabetes_subtypes.html";
+            },},{id: "projects-patient-facing-llm-safety",
+          title: 'Patient-facing LLM Safety',
+          description: "Evaluating and improving safety of large language models for patient-facing medical question answering",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/llm_safety.html";
             },},{id: "projects-cvd-analytics",
           title: 'CVD analytics',
           description: "Cardiovascular risk assessment for patients with diabetes",
@@ -267,9 +302,14 @@ ninja.data = [{
           description: "Phenotype evaluation via PubMed",
           section: "Projects",handler: () => {
               window.location.href = "/projects/pheknow.html";
+            },},{id: "projects-prevent-pri",
+          title: 'PREVENT-PRI',
+          description: "Pragmatic and automated pressure injury detection across a heterogeneous patient population",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/prevent_pri.html";
             },},{id: "projects-sodohku",
           title: 'sodohku',
-          description: "Aequitas - Unlocking Social determinants of health knowledge",
+          description: "Unlocking social determinants of health knowledge",
           section: "Projects",handler: () => {
               window.location.href = "/projects/sodohku.html";
             },},{id: "projects-tensorox",
