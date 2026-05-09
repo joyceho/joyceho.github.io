@@ -3,7 +3,7 @@ layout: page
 title: TIMES
 description: Spatiotemporal analysis via tensor factorization
 img: /assets/img/times-map.png
-category: work
+category: past
 importance: 7
 related_publications: true
 ---

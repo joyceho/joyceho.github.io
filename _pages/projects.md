@@ -5,8 +5,8 @@ permalink: /projects/
 description: A sample of my group's research projects. These projects are not a true reflection of what we work on these days. My students' interests are the best way to gauge what we do!
 nav: true
 nav_order: 3
-display_categories: [work, fun]
-horizontal: false
+display_categories: [active, past]
+horizontal: true
 ---
 
 <!-- pages/projects.md -->
