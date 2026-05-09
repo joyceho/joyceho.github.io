@@ -4,7 +4,7 @@ title: Pheknow-Cloud
 description: Phenotype evaluation via PubMed
 img: /assets/img/PIVET-thumbnail.png
 importance: 8
-category: work
+category: past
 ---
 
 Our work focuses on developing a tool to help evaluate high-throughput phenotype candidates using PubMed, an online repository of medical literature. We use co-occurrence analysis to build sets of evidence for user-supplied candidate phenotypes.

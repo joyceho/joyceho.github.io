@@ -4,7 +4,7 @@ title: AFA
 description: Detecting adverse outcomes from atrial fibrillation ablation
 img: /assets/img/proj/af.png
 importance: 3
-category: work
+category: active
 ---
 
 
