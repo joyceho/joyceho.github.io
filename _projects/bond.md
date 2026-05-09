@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Biodiversity Database Integration
+title: Biodiversity DB
 description: Database integration for biodiversity
 img: /assets/img/proj/bond.png
 importance: 4
