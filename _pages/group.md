@@ -7,16 +7,23 @@ nav: true
 nav_order: 1
 ---
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-6 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/group_s2023.png' | relative_url }}">
+<div class="grid">
+    {% for photo in site.data.gallery %}
+    <div class="grid-item" style="width: calc(50% - 5px);">
+        <div class="card hoverable mb-2">
+            <img src="{{ photo.img | relative_url }}"
+                 class="card-img-top img-fluid"
+                 data-zoomable
+                 alt="{{ photo.caption }}"
+                 loading="lazy">
+            {% if photo.caption %}
+            <div class="card-footer text-center p-1">
+                <small class="text-muted">{{ photo.caption }}</small>
+            </div>
+            {% endif %}
+        </div>
     </div>
-    <div class="col-sm-6 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/group_s2022.jpg' | relative_url }}">
-    </div>
-</div>
-<div class="caption">
-        Group photos from Spring 2023 (left) and Spring 2022 (right).
+    {% endfor %}
 </div>
 
 We analyze and mine complex, heterogenous data to explore, characterize, and understand the underlying states / processes. Our approaches are based on statistical machine learning and data mining that work on a variety of real-life applications with a focus on healthcare applications.
