@@ -8,22 +8,37 @@ course_groups:
   - id: "CS 171"
     title: "CS 171 - Introduction to Computer Science II"
     description: "Data structures, algorithm analysis, and object-oriented design in Java."
+    level: "undergraduate"
     semesters: ["Spring 2022", "Fall 2021", "Fall 2017"]
   - id: "CS 334"
     title: "CS 334 - Machine Learning"
     description: "Fundamentals of statistical machine learning with real-world applications."
+    level: "undergraduate"
     semesters: ["Spring 2024", "Fall 2023", "Fall 2019"]
   - id: "CS 377"
     title: "CS 377 - Database Systems"
     description: "Relational databases, SQL, query optimization, and database design."
+    level: "undergraduate"
     semesters: ["Fall 2021", "Spring 2018", "Spring 2017", "Spring 2016"]
+  - id: "CS 512"
+    title: "CS 512 - Ethics of Computing and AI"
+    description: "Exploration of benefits and harms of emerging computing technologies"
+    level: "graduate"
+    semesters: ["Spring 2026"]
   - id: "CS 534"
     title: "CS 534 - Machine Learning"
-    description: "Graduate-level machine learning theory, algorithms, and applications."
+    description: "Foundations and advanced topics in machine learning and its applications."
+    level: "graduate"
     semesters: ["Fall 2023", "Fall 2018", "Fall 2017", "Spring 2017"]
+  - id: "CS 554"
+    title: "CS 554 - Advanced database systems"
+    description: "Diving into database internals, query optimization, and modern database paradigms."
+    level: "graduate"
+    semesters: ["Fall 2025"]
   - id: "CS 584"
     title: "CS 584 - Big Data Analytics"
     description: "Methods and tools for analytics on large-scale datasets."
+    level: "graduate"
     semesters: ["Spring 2016"]
 ---
 
@@ -32,7 +47,14 @@ course_groups:
   <div class="col mb-4">
     <div class="card h-100 hoverable">
       <div class="card-body">
-        <h5 class="card-title">{{ group.title }}</h5>
+        <div class="d-flex justify-content-between align-items-start">
+          <h5 class="card-title mb-1">{{ group.title }}</h5>
+            {% if group.level == "graduate" %}
+              <span class="badge badge-level badge-level-grad ms-2 flex-shrink-0">G</span>
+            {% else %}
+              <span class="badge badge-level badge-level-undergrad ms-2 flex-shrink-0">U</span>
+            {% endif %}
+        </div>
         <p class="card-text text-muted">{{ group.description }}</p>
         <div class="mt-auto pt-2">
           {% for sem in group.semesters %}

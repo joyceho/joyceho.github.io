@@ -1,0 +1,167 @@
+// ============================================================
+// Course page styles — badges, schedule table, grading table
+// Save as _sass/_courses.scss and add to assets/css/main.scss:
+//   @import "courses";
+// ============================================================
+
+// ── Course subtitle (sits below al-folio's rendered title) ─
+.course-subtitle {
+  color: $grey-color;
+  font-size: 0.95rem;
+  margin-top: -0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+// ── Section headings ───────────────────────────────────────
+h2.section-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  border-bottom: 1px solid $grey-color-light;
+  padding-bottom: 0.4rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+
+// ── Schedule table ─────────────────────────────────────────
+.table-schedule {
+  thead th {
+    background: var(--course-thead-bg);
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    border-top: none;
+  }
+
+  td {
+    vertical-align: top;
+    font-size: 0.9rem;
+    padding: 0.65rem 0.75rem;
+  }
+}
+
+.lesson-num {
+  display: block;
+  color: $grey-color;
+  font-size: 0.75rem;
+  margin-bottom: 2px;
+}
+
+// ── Reading links ──────────────────────────────────────────
+.reading-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li { margin-top: 0.2rem; }
+  a  { font-size: 0.82rem; }
+}
+
+// ── Badges ─────────────────────────────────────────────────
+.badge-optional {
+  display: inline;
+  font-size: 0.68rem;
+  font-weight: 500;
+  background: var(--badge-optional-bg);
+  color: var(--badge-optional-color);
+  border-radius: 3px;
+  padding: 1px 5px;
+  margin-right: 3px;
+  vertical-align: middle;
+}
+
+.badge-additional {
+  display: inline;
+  font-size: 0.68rem;
+  font-weight: 500;
+  background: var(--badge-additional-bg);
+  color: var(--badge-additional-color);
+  border-radius: 3px;
+  padding: 1px 5px;
+  margin-right: 3px;
+  vertical-align: middle;
+}
+
+.badge-assign {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 500;
+  background: var(--badge-assign-bg);
+  color: var(--badge-assign-color);
+  border: 1px solid var(--badge-assign-border);
+  border-radius: 3px;
+  padding: 2px 6px;
+  margin-bottom: 3px;
+  white-space: normal;
+  line-height: 1.4;
+}
+
+.badge-level {
+  font-size: 0.7rem;
+  font-weight: normal;
+  border-radius: 50rem;
+  padding: 0.25em 0.5em;
+}
+.badge-level-grad {
+  background-color: var(--badge-grad-bg);
+  color: var(--badge-grad-color);
+}
+.badge-level-undergrad {
+  background-color: var(--badge-undergrad-bg);
+  color: var(--badge-undergrad-color);
+}
+
+// ── Grading table ──────────────────────────────────────────
+.table-grading {
+  td, th { font-size: 1rem; }
+  .weight { font-weight: 600; }
+}
+
+// ── Policy callout box ─────────────────────────────────────
+.policy-box {
+  background: var(--course-thead-bg);
+  border-left: 3px solid $grey-color;
+  padding: 1rem 1.25rem;
+  font-size: 0.9rem;
+  margin-top: 1.5rem;
+}
+
+// ── CSS custom properties — light (default) ────────────────
+:root {
+  --course-thead-bg:       #f8f9fa;
+
+  --badge-optional-bg:     #e9ecef;
+  --badge-optional-color:  #495057;
+
+  --badge-additional-bg:   #e2f0fb;
+  --badge-additional-color:#0056b3;
+
+  --badge-assign-bg:       #fff3cd;
+  --badge-assign-color:    #856404;
+  --badge-assign-border:   #ffc107;
+
+  --badge-grad-bg:         #F2A900;
+  --badge-grad-color:      #1a1a1a;
+  --badge-undergrad-bg:    #002878;
+  --badge-undergrad-color: #ffffff;
+}
+
+// ── CSS custom properties — dark ───────────────────────────
+html[data-theme="dark"] {
+  --course-thead-bg:       #2a2a2a;
+
+  --badge-optional-bg:     #3a3a3a;
+  --badge-optional-color:  #adb5bd;
+
+  --badge-additional-bg:   #0d2a3e;
+  --badge-additional-color:#7bc4f5;
+
+  --badge-assign-bg:       #332600;
+  --badge-assign-color:    #ffd060;
+  --badge-assign-border:   #997300;
+
+  --badge-grad-bg:         #F2A900;
+  --badge-grad-color:      #1a1a1a;
+  --badge-undergrad-bg:    #002878;
+  --badge-undergrad-color: #ffffff;
+}
