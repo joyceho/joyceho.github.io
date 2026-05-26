@@ -99,6 +99,11 @@ ninja.data = [{
           description: "",
           section: "Courses",handler: () => {
               window.location.href = "/courses/cs377_s18.html";
+            },},{id: "courses-cs-512-ethics-of-computing-and-ai",
+          title: 'CS 512 - Ethics of Computing and AI',
+          description: "",
+          section: "Courses",handler: () => {
+              window.location.href = "/courses/cs512_s26.html";
             },},{id: "courses-cs-534-machine-learning",
           title: 'CS 534 - Machine Learning',
           description: "",
@@ -119,6 +124,11 @@ ninja.data = [{
           description: "",
           section: "Courses",handler: () => {
               window.location.href = "/courses/cs534_s17.html";
+            },},{id: "courses-cs-554-database-systems",
+          title: 'CS 554 - Database Systems',
+          description: "",
+          section: "Courses",handler: () => {
+              window.location.href = "/courses/cs554_f25.html";
             },},{id: "courses-cs-584-big-data-analytics",
           title: 'CS 584 - Big Data Analytics',
           description: "",
