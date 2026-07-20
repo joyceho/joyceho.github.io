@@ -1,14 +1,15 @@
 // ============================================================
 // Course page styles — badges, schedule table, grading table
-// Save as _sass/_courses.scss and add to assets/css/main.scss:
-//   @import "courses";
+// Loaded via assets/css/main.scss: @use "courses";
 // ============================================================
+
+@use "variables" as v;
 
 // ── Course subtitle (sits below al-folio's rendered title) ─
 .course-subtitle {
-  color: $grey-color;
+  color: v.$grey-color;
   font-size: 0.95rem;
-  margin-top: -0.75rem;
+  margin-top: 0;
   margin-bottom: 1.5rem;
 }
 
@@ -16,7 +17,7 @@
 h2.section-title {
   font-size: 1.15rem;
   font-weight: 600;
-  border-bottom: 1px solid $grey-color-light;
+  border-bottom: 1px solid v.$grey-color-light;
   padding-bottom: 0.4rem;
   margin-top: 2.5rem;
   margin-bottom: 1.25rem;
@@ -42,7 +43,7 @@ h2.section-title {
 
 .lesson-num {
   display: block;
-  color: $grey-color;
+  color: v.$grey-color;
   font-size: 0.75rem;
   margin-bottom: 2px;
 }
@@ -120,7 +121,7 @@ h2.section-title {
 // ── Policy callout box ─────────────────────────────────────
 .policy-box {
   background: var(--course-thead-bg);
-  border-left: 3px solid $grey-color;
+  border-left: 3px solid v.$grey-color;
   padding: 1rem 1.25rem;
   font-size: 0.9rem;
   margin-top: 1.5rem;

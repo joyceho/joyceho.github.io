@@ -1,0 +1,149 @@
+// Small site-specific tweaks to al_folio_core-owned styles.
+// Kept separate (rather than shadowing the owning gem file) so gem updates
+// don't silently get masked by a stale full-file override.
+
+// Publication venue abbreviation badges (_sass/_publications.scss in
+// al_folio_core) wrap long venue names; keep them on one line.
+.publications li .abbr abbr {
+  white-space: normal;
+}
+
+// al_folio_core's Bootstrap-compat .table (assets/tailwind/app.css) hardcodes
+// color: #212529 with no dark-mode override, so the "news" table (and any
+// other .table content) is near-invisible dark-gray-on-black in dark mode.
+.table {
+  color: var(--global-text-color);
+}
+
+// page.liquid (al_folio_core) always renders a <p class="post-description">,
+// even when page.description is unset. Its 2rem margin-bottom then reserves
+// dead space under every page title that doesn't set a description (e.g.
+// course pages), and pushed .course-subtitle far enough to visually clip
+// into it. Collapse it when empty instead of shadowing the whole layout.
+.post-description:empty {
+  display: none;
+  margin: 0;
+}
+
+// assets/tailwind/app.css (al_folio_core) ships the Bootstrap-compat grid's
+// .row-cols-* up to md-3 only. _pages/group.md uses row-cols-md-4 for the
+// member card grid, which otherwise has no CSS and collapses to one column.
+@media (min-width: 768px) {
+  .row-cols-md-4 > * {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+// Bootstrap "card" component: al_folio_core's own templates never use it, so
+// its compat layer (assets/tailwind/app.css) only ships .btn/.badge/.row/.col
+// etc, not .card. _pages/group.md, blog.md, and teaching.md all build custom
+// card grids (photo galleries, member/alumni cards, course cards) on top of
+// it, so recreate the subset those pages actually use.
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background-color: var(--global-card-bg-color);
+  background-clip: border-box;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.25rem;
+}
+
+.card-img-top,
+.card-img {
+  width: 100%;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1rem;
+}
+
+.card-title {
+  margin-bottom: 0.5rem;
+}
+
+// assets/tailwind/app.css sets .card-title { font-size: 2rem }, sized for
+// al_folio_core's own project cards which use <h2 class="card-title">.
+// _pages/group.md and teaching.md reuse the same class on <h6>/<h5> for
+// member/course cards, so it was inflating those to project-title size.
+// Restore their natural heading size instead of the shared 2rem override.
+h6.card-title {
+  font-size: 1rem;
+}
+
+h5.card-title {
+  font-size: 1.25rem;
+}
+
+.card-text:last-child {
+  margin-bottom: 0;
+}
+
+.card-footer {
+  padding: 0.5rem 1rem;
+  background-color: var(--global-card-bg-color);
+  border-top: 1px solid var(--global-divider-color);
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-muted {
+  color: var(--global-text-color-light) !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem !important;
+}
+
+.p-1 {
+  padding: 0.25rem !important;
+}
+
+// A handful more Bootstrap utility classes used by _pages/teaching.md and
+// blog.md that aren't part of al_folio_core's compat subset.
+.rounded {
+  border-radius: 0.25rem !important;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.pt-2 {
+  padding-top: 0.5rem !important;
+}
+
+.ms-2 {
+  margin-left: 0.5rem !important;
+}
+
+.mt-auto {
+  margin-top: auto !important;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0 !important;
+}
+
+.align-items-start {
+  align-items: flex-start !important;
+}
+
+.float-right {
+  float: right !important;
+}
