@@ -7,24 +7,51 @@ nav: true
 nav_order: 1
 ---
 
-<div class="grid">
-    {% for photo in site.data.gallery %}
-    <div class="grid-item" style="width: calc(50% - 5px);">
-        <div class="card hoverable mb-2">
-            <img src="{{ photo.img | relative_url }}"
-                 class="card-img-top img-fluid"
-                 data-zoomable
-                 alt="{{ photo.caption }}"
-                 loading="lazy">
-            {% if photo.caption %}
-            <div class="card-footer text-center p-1">
-                <small class="text-muted">{{ photo.caption }}</small>
+<div class="gallery-carousel">
+    <div class="gallery-track">
+        {% for photo in site.data.gallery %}
+        <div class="gallery-slide">
+            <div class="gallery-slide-image">
+                <img src="{{ photo.img | relative_url }}"
+                     alt="{{ photo.caption }}"
+                     loading="lazy">
             </div>
+            {% if photo.caption %}
+            <div class="gallery-caption">{{ photo.caption }}</div>
             {% endif %}
         </div>
+        {% endfor %}
     </div>
-    {% endfor %}
+    <button type="button" class="gallery-arrow gallery-prev" aria-label="Previous photo">&#8249;</button>
+    <button type="button" class="gallery-arrow gallery-next" aria-label="Next photo">&#8250;</button>
+    <div class="gallery-dots">
+        {% for photo in site.data.gallery %}
+        <span class="gallery-dot" aria-label="Go to photo {{ forloop.index }}"></span>
+        {% endfor %}
+    </div>
 </div>
+
+<script>
+  (function () {
+    const carousel = document.querySelector('.gallery-carousel');
+    if (!carousel) return;
+    const slides = carousel.querySelectorAll('.gallery-slide');
+    const dots = carousel.querySelectorAll('.gallery-dot');
+    let index = 0;
+
+    function show(i) {
+      index = (i + slides.length) % slides.length;
+      slides.forEach((slide, n) => slide.classList.toggle('active', n === index));
+      dots.forEach((dot, n) => dot.classList.toggle('active', n === index));
+    }
+
+    carousel.querySelector('.gallery-prev').addEventListener('click', () => show(index - 1));
+    carousel.querySelector('.gallery-next').addEventListener('click', () => show(index + 1));
+    dots.forEach((dot, n) => dot.addEventListener('click', () => show(n)));
+
+    show(0);
+  })();
+</script>
 
 We analyze and mine complex, heterogenous data to explore, characterize, and understand the underlying states / processes. Our approaches are based on statistical machine learning and data mining that work on a variety of real-life applications with a focus on healthcare applications.
 

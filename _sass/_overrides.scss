@@ -147,3 +147,89 @@ h5.card-title {
 .float-right {
   float: right !important;
 }
+
+// Rotating photo gallery on _pages/group.md, replacing the old masonry grid.
+// al_folio_core ships no carousel component, so this is a small custom one.
+.gallery-carousel {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+.gallery-slide {
+  display: none;
+}
+
+.gallery-slide.active {
+  display: block;
+}
+
+.gallery-slide-image {
+  display: flex;
+  height: 450px;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-slide img {
+  display: block;
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 0.25rem;
+}
+
+.gallery-caption {
+  margin-top: 0.5rem;
+  text-align: center;
+  color: var(--global-text-color-light);
+  font-size: 0.9rem;
+}
+
+.gallery-arrow {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  width: 2.25rem;
+  height: 2.25rem;
+  border: none;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.gallery-arrow:hover {
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.gallery-prev {
+  left: 0.5rem;
+}
+
+.gallery-next {
+  right: 0.5rem;
+}
+
+.gallery-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+}
+
+.gallery-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--global-divider-color);
+  cursor: pointer;
+}
+
+.gallery-dot.active {
+  background: var(--global-theme-color);
+}

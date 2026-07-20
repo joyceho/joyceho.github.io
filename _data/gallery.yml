@@ -1,5 +1,11 @@
 # Add new photos here. They will appear in the masonry gallery on the group page.
 # Fields: img (path under assets/img/), caption (optional)
+- img: /assets/img/group_w2024.jpg
+  caption: Winter 2024
+  
+- img: /assets/img/group_s2024.jpg
+  caption: Spring 2024
+
 - img: /assets/img/group_s2023.png
   caption: Spring 2023
 
