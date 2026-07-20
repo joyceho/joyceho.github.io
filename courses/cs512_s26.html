@@ -1,5 +1,404 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> CS 512 - Ethics of Computing and AI | Joyce C Ho </title> <meta name="author" content="Joyce C Ho"> <meta name="description" content="Joyce Ho - Associate professor at Emory University. "> <link rel="stylesheet" href="/assets/css/bootstrap.min.css?a4b3f509e79c54a512b890d73235ef04"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="/assets/css/academicons.min.css?f0b7046b84e425c55f3463ac249818f5"> <link defer rel="stylesheet" href="/assets/css/scholar-icons.css?62b2ac103a88034e6882a5be5f3e2772"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="/assets/img/favicon.ico?c003eb7089d4c3bc4b323f945c44c13a"> <link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e"> <link rel="canonical" href="https://joyceho.github.io/courses/cs512_s26.html"> <script src="/assets/js/theme.js?a81d82887dd692e91686b43de4542f18"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> CS 512 - Ethics of Computing and AI | Joyce C Ho </title> <meta name="author" content="Joyce C Ho"> <meta name="description" content="Joyce Ho - Associate professor at Emory University. "> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="/assets/img/favicon.ico?v=c003eb7089d4c3bc4b323f945c44c13a"> <link rel="stylesheet" href="/assets/css/main.css?v=f0b101217084a90093badfe99ff9a7d1"> <link rel="canonical" href="https://joyceho.github.io/courses/cs512_s26.html"> <script src="/assets/js/theme.js?v=7af685e2ba20b37fef545c97b8064050"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
     initTheme();
-  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Joyce</span> C Ho </a> <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse text-right" id="navbarNav"> <ul class="navbar-nav ml-auto flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/group/">group </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">cv </a> </li> <li class="nav-item active"> <a class="nav-link" href="/courses/">courses <span class="sr-only">(current)</span> </a> </li> <li class="nav-item"> <button id="search-toggle" title="Search" onclick="openSearchModal()"> <span class="nav-link">ctrl k <i class="ti ti-search"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" title="Change theme"> <i class="ti ti-sun-moon" id="light-toggle-system"></i> <i class="ti ti-moon-filled" id="light-toggle-dark"></i> <i class="ti ti-sun-filled" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">CS 512 - Ethics of Computing and AI</h1> <p class="post-description"></p> </header> <article> <p class="course-subtitle">Graduate Course  ·  Spring 2026  ·  Instructors: Judy Gichoya and Joyce Ho</p> <h2 class="section-title">Course Description</h2> <p>The rapid evolution of computing innovations from social networks and microblogging to artificial intelligence (AI), autonomous vehicles, and generative AI has ushered in transformative technologies that reshape our society. This graduate-level course examines the ethical, societal, and policy implications of emerging computing and AI technologies. Students will develop frameworks to critically assess whether these technologies create more benefit than harm by exploring fundamental principles from computing, AI, policy, ethics, medicine, and social sciences.</p> <h2 class="section-title">Course Philosophy</h2> <p>Ethical reasoning about technology must be practical, not purely theoretical. This course is anchored in the evolution of medical ethics, a field that has long grappled with questions of harm, consent, autonomy, and accountability, and uses it as a mental model for navigating the rapidly shifting landscape of AI and emerging technologies.</p> <p>As ethical reasoning often necessitates dialogue, the course is structured to maximize it. Classes are flipped, with case-based studies not only grounding the context but serving as the mechanism for discussion and discourse. Students also take on the role of teachers to bring different perspectives to the course. This is complemented with direct engagement with the technologies themselves where students reflect critically on first-hand use.</p> <h2 class="section-title">Schedule</h2> <table class="table table-bordered table-schedule"> <thead> <tr> <th style="width:25%;">Lesson</th> <th style="width:53%;">Readings</th> <th style="width:22%;">Assignments</th> </tr> </thead> <tbody> <tr> <td> <span class="lesson-num">Lesson 1</span>Introduction</td> <td></td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 2</span>Virtue Ethics</td> <td> <ul class="reading-list"> <li><a href="https://medium.com/@larrydelaneyjr/the-rise-and-fall-of-tay-how-microsofts-ai-chatbot-became-a-lesson-in-ethics-and-ai-safety-8eca368fa91e" target="_blank" rel="external nofollow noopener">The Rise and Fall of Tay</a></li> <li><a href="https://spectrum.ieee.org/in-2016-microsofts-racist-chatbot-revealed-the-dangers-of-online-conversation" target="_blank" rel="external nofollow noopener">Dangers of Online Conversation</a></li> </ul> </td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 3</span>Utilitarianism</td> <td> <ul class="reading-list"> <li><a href="https://www.nature.com/articles/s41586-018-0637-6" target="_blank" rel="external nofollow noopener">Moral Machine Experiment</a></li> <li><a href="https://spectrum.ieee.org/av-trolley-problem" target="_blank" rel="external nofollow noopener">The AV Trolley Problem</a></li> <li> <span class="badge-additional">Additional</span><a href="https://www.fox7austin.com/news/waymos-self-driving-vehicles-pass-austin-isd-school-buses-least-20-times-district-says" target="_blank" rel="external nofollow noopener">Waymo and School Buses</a> </li> <li> <span class="badge-additional">Additional</span><a href="https://www.nytimes.com/2025/12/21/us/waymo-suspended-service-in-san-francisco-after-problems-during-power-outage.html" target="_blank" rel="external nofollow noopener">Waymo and Power Outages</a> </li> </ul> </td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 4</span>Utilitarianism &amp; Deontology</td> <td> <ul class="reading-list"> <li><a href="https://www.nytimes.com/2020/01/18/technology/clearview-privacy-facial-recognition.html" target="_blank" rel="external nofollow noopener">Clearview AI</a></li> <li><a href="https://lawreview.law.miami.edu/take-it-at-face-value-court-approves-equity-based-settlement-in-clearview-ai-facial-recognition-class-action/" target="_blank" rel="external nofollow noopener">Clearview Settlement</a></li> </ul> </td> <td><span class="badge-assign">Group Assignment on the advent of software company's annual year-end feature</span></td> </tr> <tr> <td> <span class="lesson-num">Lesson 5</span>Additional Ethical Frameworks (e.g., Feminist, Communitarian)</td> <td> <ul class="reading-list"> <li><a href="https://news.mit.edu/2018/study-finds-gender-skin-type-bias-artificial-intelligence-systems-0212" target="_blank" rel="external nofollow noopener">Gender Shades Study</a></li> <li><a href="https://proceedings.mlr.press/v81/buolamwini18a.html" target="_blank" rel="external nofollow noopener">Original Paper</a></li> <li> <span class="badge-additional">Additional</span><a href="https://www.reuters.com/legal/government/epic-systems-sues-over-alleged-scheme-sell-medical-data-to-plaintiffs-lawyers-2026-01-13/" target="_blank" rel="external nofollow noopener">Epic sues company</a> </li> <li> <span class="badge-additional">Additional</span><a href="http://gendershades.org/docs/ibm.pdf" target="_blank" rel="external nofollow noopener">IBM response</a> </li> </ul> </td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 6</span>Fairness</td> <td> <ul class="reading-list"> <li><a href="https://restofworld.org/2023/ai-image-stereotypes/" target="_blank" rel="external nofollow noopener">World of Stereotypes</a></li> <li><a href="https://www.washington.edu/news/2024/10/31/ai-bias-resume-screening-race-gender/" target="_blank" rel="external nofollow noopener">Bias in Ranking Job Applicants</a></li> </ul> </td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 7</span>Data Privacy / Data Consent</td> <td> <ul class="reading-list"> <li><a href="https://www.cbsnews.com/news/mastercard-credit-card-customer-data-sold/" target="_blank" rel="external nofollow noopener">Mastercard Sells Data</a></li> <li><a href="https://www.npr.org/2024/10/03/g-s1-25795/23andme-data-genetic-dna-privacy" target="_blank" rel="external nofollow noopener">23andMe Data</a></li> </ul> </td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 8</span>IP / Plagiarism</td> <td> <ul class="reading-list"> <li><a href="https://www.rollingstone.com/music/music-news/a-i-music-suno-fires-back-at-record-labels-admits-training-on-copyrighted-music-lawsuit-1235072061/" target="_blank" rel="external nofollow noopener">AI Music Copyright</a></li> <li><a href="https://www.nytimes.com/2025/10/03/books/review/andrea-bartz-anthropic-lawsuit.html" target="_blank" rel="external nofollow noopener">Thriller Writer Copyright Win</a></li> <li> <span class="badge-additional">Additional</span><a href="https://www.theguardian.com/global-development/2018/dec/19/colonialism-accusations-hakuna-matata-disney-far-from-problem-free-lion-king-remake" target="_blank" rel="external nofollow noopener">Hakuna Matata Trademark</a> </li> </ul> </td> <td><span class="badge-assign">Group Assignment on creation of two AI-generated videos</span></td> </tr> <tr> <td> <span class="lesson-num">Lesson 9</span>Accountability</td> <td> <ul class="reading-list"> <li><a href="https://www.henricodolfing.ch/case-study-4-the-440-million-software-error-at-knight-capital/" target="_blank" rel="external nofollow noopener">Knight Capital Software Error</a></li> <li><a href="https://www.wired.com/story/the-aws-outage-was-a-nightmare-for-college-students/" target="_blank" rel="external nofollow noopener">AWS Outage Affects Canvas</a></li> <li> <span class="badge-optional">Optional</span><a href="https://www.thorntons-law.co.uk/knowledge/whos-liable-when-aws-goes-down-understanding-the-chain-of-responsibility" target="_blank" rel="external nofollow noopener">Liability when AWS goes Down</a> </li> </ul> </td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 10</span>Economic Sustainability</td> <td> <ul class="reading-list"> <li><a href="https://assets.anthropic.com/m/218c82b858610fac/original/Economic-Index.pdf" target="_blank" rel="external nofollow noopener">Anthropic Economic Index</a></li> <li><a href="https://www.thehrdigest.com/cba-rehires-45-workers-after-its-experiment-with-ai-goes-off-track/" target="_blank" rel="external nofollow noopener">Commonwealth Bank Rehires Employees</a></li> <li> <span class="badge-optional">Optional</span><a href="https://www.hbs.edu/bigs/will-artificial-intelligence-improve-or-eliminate-jobs" target="_blank" rel="external nofollow noopener">Will AI Improve or Eliminate Jobs?</a> </li> </ul> </td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 11</span>Environmental Sustainability</td> <td> <ul class="reading-list"> <li><a href="https://www.usatoday.com/story/money/business/2025/09/23/environmental-cost-of-ai/85797763007/" target="_blank" rel="external nofollow noopener">Hidden Environment Cost of Generative AI</a></li> <li><a href="https://www.technologyreview.com/2025/05/20/1116327/ai-energy-usage-climate-footprint-big-tech/" target="_blank" rel="external nofollow noopener">AI's energy footprint</a></li> </ul> </td> <td><span class="badge-assign">Final Project (AI co-scientist) Proposal</span></td> </tr> <tr> <td> <span class="lesson-num">Lesson 12</span>Autonomy</td> <td> <ul class="reading-list"> <li><a href="https://www.technologyreview.com/2020/09/17/1008549/kids-need-protection-from-ai/" target="_blank" rel="external nofollow noopener">Algorithmic Protection for Children</a></li> <li><a href="https://www.technologyreview.com/2020/08/07/1006132/software-algorithms-proctoring-online-tests-ai-ethics/" target="_blank" rel="external nofollow noopener">Exam Proctoring Tools</a></li> </ul> </td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 13</span>Agency</td> <td> <ul class="reading-list"> <li><a href="https://medium.com/codex/the-devin-ai-controversy-a-senior-engineers-perspective-on-ai-hype-vs-reality-61604c02d9c6" target="_blank" rel="external nofollow noopener">Devin AI</a></li> <li><a href="https://www.theartnewspaper.com/2023/05/01/instagrams-new-tools-prove-shadowbanning-is-realand-now-artists-are-trapped" target="_blank" rel="external nofollow noopener">Instagram Shadowbanning</a></li> </ul> </td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 14</span>Business of AI / Software</td> <td> <ul class="reading-list"> <li><a href="https://www.technologyreview.com/2025/08/15/1121900/gpt4o-grief-ai-companion/" target="_blank" rel="external nofollow noopener">GPT-4o Shutdown</a></li> <li><a href="https://www.nytimes.com/2025/08/04/technology/google-meta-openai-military-war.html" target="_blank" rel="external nofollow noopener">Militarization of Silicon Valley</a></li> </ul> </td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 15</span>AI Safety and Alignment</td> <td> <ul class="reading-list"> <li><a href="https://www.wsj.com/tech/ai/ai-chatbot-startup-google-to-settle-lawsuits-over-teen-suicides-fb41a063" target="_blank" rel="external nofollow noopener">AI Companion Lawsuit Settlements</a></li> <li><a href="https://dl.acm.org/doi/10.1145/3613904.3641922" target="_blank" rel="external nofollow noopener">Benchmarking with Personas</a></li> <li> <span class="badge-optional">Optional</span><a href="https://www.thenationalcouncil.org/resources/case-vignette-slides-and-sample-cases/" target="_blank" rel="external nofollow noopener">Mental Wellbeing Case Vignettes</a> </li> </ul> </td> <td><span class="badge-assign">Group Assignment on red teaming for mental health AI safety</span></td> </tr> <tr> <td> <span class="lesson-num">Lesson 16</span>Taking Back Your Data</td> <td> <ul class="reading-list"> <li><a href="https://issues.org/ai-ethics-research-framework-human-rights-gray/" target="_blank" rel="external nofollow noopener">AI Human Rights Framework</a></li> <li><a href="https://www.nejm.org/doi/full/10.1056/NEJMp2502448" target="_blank" rel="external nofollow noopener">Clinical Surveillance</a></li> <li> <span class="badge-optional">Optional</span><a href="https://arxiv.org/pdf/2405.19479" target="_blank" rel="external nofollow noopener">Participation in Age of Foundation Models</a> </li> </ul> </td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 17</span>Re-visiting Data Consent</td> <td> <ul class="reading-list"> <li><a href="https://www.reuters.com/legal/litigation/health-care-ambient-scribes-offer-promise-create-new-legal-frontiers--pracin-2026-01-23/" target="_blank" rel="external nofollow noopener">Healthcare Ambient Scribe</a></li> <li><a href="https://www.mediaweek.com.au/posting-from-the-afterlife-meta-patents-ai-digital-stand-ins/" target="_blank" rel="external nofollow noopener">AI Digital Stand-ins</a></li> <li> <span class="badge-optional">Optional</span><a href="https://patents.google.com/patent/US12513102B2/en" target="_blank" rel="external nofollow noopener">Meta AI Patent</a> </li> </ul> </td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 18</span>Class-Led Discussion</td> <td> <ul class="reading-list"> <li><a href="https://www.archive.vtmag.vt.edu/spring16/fighting-for-flint.html" target="_blank" rel="external nofollow noopener">Fighting for Flint</a></li> <li><a href="https://lailluminator.com/2024/05/10/air-monitoring/" target="_blank" rel="external nofollow noopener">Citizen-Led Air Monitoring</a></li> </ul> </td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 19</span>Class-Led Discussion</td> <td> <ul class="reading-list"> <li><a href="https://tribunemag.co.uk/2022/01/amazon-algorithm-human-resource-management-tech-worker-surveillance" target="_blank" rel="external nofollow noopener">Algorithm is Your Boss</a></li> <li><a href="https://equitablegrowth.org/how-artificial-intelligence-uncouples-hard-work-from-fair-wages-through-surveillance-pay-practices-and-how-to-fix-it/" target="_blank" rel="external nofollow noopener">Algorithmic Wage</a></li> </ul> </td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 20</span>Class-Led Discussion</td> <td> <ul class="reading-list"> <li><a href="https://www.nytimes.com/2025/05/14/technology/chatgpt-college-professors.html" target="_blank" rel="external nofollow noopener">Professors using ChatGPT</a></li> <li><a href="https://www.cnn.com/2024/04/06/tech/teachers-grading-ai" target="_blank" rel="external nofollow noopener">AI Grading Essays</a></li> </ul> </td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 21</span>Class-Led Discussion</td> <td> <ul class="reading-list"> <li><a href="https://www.theguardian.com/us-news/2021/apr/29/ivy-league-colleges-apologize-bones-black-child-move" target="_blank" rel="external nofollow noopener">Coursera using MOVE bombing bones</a></li> <li><a href="https://www.nytimes.com/2021/04/24/us/move-rowhouse-bombing-victim-remains.html" target="_blank" rel="external nofollow noopener">Anthropologists keep bones</a></li> </ul> </td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 22</span>Class-Led Discussion</td> <td> <ul class="reading-list"> <li><a href="https://www.nytimes.com/2021/05/18/business/citizen-app-arson-wildfire-devin-hilton.html" target="_blank" rel="external nofollow noopener">Citizen manhunt gets the wrong person</a></li> <li><a href="https://www.vice.com/en/article/lapd-emails-citizen-palisades-wildfire-manhunt/" target="_blank" rel="external nofollow noopener">Fallout from Citizen's manhunt</a></li> <li> <span class="badge-additional">Additional</span><a href="https://dl.acm.org/doi/fullHtml/10.1145/3544548.3581258" target="_blank" rel="external nofollow noopener">Citizen Atlanta Case Study</a> </li> </ul> </td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 23</span>Class-Led Discussion</td> <td> <ul class="reading-list"> <li><a href="https://www.cnn.com/2024/12/22/business/facebook-content-moderators-kenya-ptsd-intl" target="_blank" rel="external nofollow noopener">Cost of Content Moderation</a></li> <li><a href="https://www.nbcnews.com/tech/elon-musk/elon-musk-grokipedia-wikipedia-neo-nazi-grok-42-encyclopedia-rcna244749" target="_blank" rel="external nofollow noopener">Grokipedia Cite Wikipedia-blacklisted sources</a></li> </ul> </td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 24</span>How Robots and Agents Changed in Two Months</td> <td> <ul class="reading-list"> <li> <span class="badge-optional">Optional</span><a href="https://www.wsbtv.com/news/local/atlanta/next-time-you-ride-waymo-you-could-be-helping-city-fill-potholes/BUIJMXX3VFCA7EWZPSNUX6NERU/" target="_blank" rel="external nofollow noopener">Waymo helping with potholes</a> </li> <li> <span class="badge-optional">Optional</span><a href="https://www.fox5atlanta.com/news/castleberry-hill-robotic-guard-dogs-crime-fighting" target="_blank" rel="external nofollow noopener">Robot dogs fight crime</a> </li> <li> <span class="badge-optional">Optional</span><a href="https://www.wsj.com/tech/ai/ai-bots-claude-openclaw-285ac816" target="_blank" rel="external nofollow noopener">Obsession with OpenClaw</a> </li> <li> <span class="badge-optional">Optional</span><a href="https://arstechnica.com/security/2026/04/heres-why-its-prudent-for-openclaw-users-to-assume-compromise/" target="_blank" rel="external nofollow noopener">OpenClaw security concerns</a> </li> <li> <span class="badge-optional">Optional</span><a href="https://www.techbuzz.ai/articles/ai-agents-guilt-tripped-into-self-sabotage-in-new-study" target="_blank" rel="external nofollow noopener">AI Agents self-sabotage</a> </li> <li> <span class="badge-optional">Optional</span><a href="https://fortune.com/2026/01/31/ai-agent-moltbot-clawdbot-openclaw-data-privacy-security-nightmare-moltbook-social-network/" target="_blank" rel="external nofollow noopener">Moltbook</a> </li> <li> <span class="badge-optional">Optional</span><a href="https://awesomeagents.ai/news/moltbook-reverse-captcha/" target="_blank" rel="external nofollow noopener">Reverse CAPTCHA</a> </li> </ul> </td> <td><span class="badge-assign">Final Project Report</span></td> </tr> <tr> <td> <span class="lesson-num">Lesson 25</span>What Does it Mean to be Human in the Age of AI</td> <td> <ul class="reading-list"> <li> <span class="badge-optional">Optional</span><a href="https://www.nytimes.com/2026/04/19/world/asia/running-robot-sets-record.html" target="_blank" rel="external nofollow noopener">Humanoid Robot wins half-marathon</a> </li> <li> <span class="badge-optional">Optional</span><a href="https://www.theguardian.com/commentisfree/2026/apr/14/ai-language-human-speech" target="_blank" rel="external nofollow noopener">AI may change speech and thought</a> </li> </ul> </td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 26</span>Final Project Presentations</td> <td></td> <td></td> </tr> </tbody> </table> <h2 class="section-title">Assignments and Grading</h2> <p>The final grade will be determined by a weighted average of all the graded items.</p> <table class="table table-bordered table-grading mt-3" style="max-width:600px;"> <thead> <tr> <th>Component</th> <th>Type</th> <th>Weight</th> </tr> </thead> <tbody> <tr> <td>Participation + Reading Exercises</td> <td>Individual</td> <td class="weight">20%</td> </tr> <tr> <td>Leading In-Class Discussion</td> <td>Group</td> <td class="weight">20%</td> </tr> <tr> <td>Peer Evaluation of In-Class Discussion</td> <td>Individual</td> <td class="weight">10%</td> </tr> <tr> <td>3 Assignments</td> <td>Group</td> <td class="weight">24%</td> </tr> <tr> <td>Final Project</td> <td>Individual</td> <td class="weight">26%</td> </tr> </tbody> </table> <div class="policy-box"> <strong>AI Tool Policy.</strong> You may use generative AI tools such as Co-Pilot and ChatGPT in the same manner as an Internet resource. You must credit the interaction source. <em>You are not allowed to solicit direct answers or duplicate responses from these tools. You may not use any generative AI writing assistants</em> to create the "written aspects" of the assignments and final project. </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Joyce C Ho. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <script src="/assets/js/bootstrap.bundle.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?a0db7e5d5c70cc3252b3138b0c91dcaf" type="text/javascript"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/js/zoom.js?85ddb88934d28b74e78031fd54cf8308"></script> <script src="/assets/js/no_defer.js?2781658a0a2b13ed609542042a859126"></script> <script defer src="/assets/js/common.js?e0514a05c5c95ac1a93a8dfd5249b92e"></script> <script defer src="/assets/js/copy_code.js?c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?d9f17b6adc2311cbabd747f4538bb15f"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/js/mathjax-setup.js?a5bb4e6a542c546dd929b24b8b236dfd"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script defer src="/assets/js/progress-bar.js?2f30e0e6801ea8f5036fa66e1ab0a71a" type="text/javascript"></script> <script src="/assets/js/vanilla-back-to-top.min.js?f40d453793ff4f64e238e420181a1d17"></script> <script>
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Joyce</span> C Ho </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/group/">group </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item active"> <a class="nav-link" href="/courses/">courses <span class="sr-only">(current)</span> </a> </li> <li class="nav-item"> <a class="nav-link" href="https://joyceho.github.io/assets/pdf/joyceho.pdf">cv</a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">CS 512 - Ethics of Computing and AI</h1> <p class="post-description"></p> </header> <article> <p class="course-subtitle">Graduate Course  ·  Spring 2026  ·  Instructors: Judy Gichoya and Joyce Ho</p> <h2 class="section-title">Course Description</h2> <p>The rapid evolution of computing innovations from social networks and microblogging to artificial intelligence (AI), autonomous vehicles, and generative AI has ushered in transformative technologies that reshape our society. This graduate-level course examines the ethical, societal, and policy implications of emerging computing and AI technologies. Students will develop frameworks to critically assess whether these technologies create more benefit than harm by exploring fundamental principles from computing, AI, policy, ethics, medicine, and social sciences.</p> <h2 class="section-title">Course Philosophy</h2> <p>Ethical reasoning about technology must be practical, not purely theoretical. This course is anchored in the evolution of medical ethics, a field that has long grappled with questions of harm, consent, autonomy, and accountability, and uses it as a mental model for navigating the rapidly shifting landscape of AI and emerging technologies.</p> <p>As ethical reasoning often necessitates dialogue, the course is structured to maximize it. Classes are flipped, with case-based studies not only grounding the context but serving as the mechanism for discussion and discourse. Students also take on the role of teachers to bring different perspectives to the course. This is complemented with direct engagement with the technologies themselves where students reflect critically on first-hand use.</p> <h2 class="section-title">Schedule</h2> <table class="table table-bordered table-schedule"> <thead> <tr> <th style="width:25%;">Lesson</th> <th style="width:53%;">Readings</th> <th style="width:22%;">Assignments</th> </tr> </thead> <tbody> <tr> <td> <span class="lesson-num">Lesson 1</span>Introduction</td> <td></td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 2</span>Virtue Ethics</td> <td> <ul class="reading-list"> <li><a href="https://medium.com/@larrydelaneyjr/the-rise-and-fall-of-tay-how-microsofts-ai-chatbot-became-a-lesson-in-ethics-and-ai-safety-8eca368fa91e" target="_blank" rel="external nofollow noopener">The Rise and Fall of Tay</a></li> <li><a href="https://spectrum.ieee.org/in-2016-microsofts-racist-chatbot-revealed-the-dangers-of-online-conversation" target="_blank" rel="external nofollow noopener">Dangers of Online Conversation</a></li> </ul> </td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 3</span>Utilitarianism</td> <td> <ul class="reading-list"> <li><a href="https://www.nature.com/articles/s41586-018-0637-6" target="_blank" rel="external nofollow noopener">Moral Machine Experiment</a></li> <li><a href="https://spectrum.ieee.org/av-trolley-problem" target="_blank" rel="external nofollow noopener">The AV Trolley Problem</a></li> <li> <span class="badge-additional">Additional</span><a href="https://www.fox7austin.com/news/waymos-self-driving-vehicles-pass-austin-isd-school-buses-least-20-times-district-says" target="_blank" rel="external nofollow noopener">Waymo and School Buses</a> </li> <li> <span class="badge-additional">Additional</span><a href="https://www.nytimes.com/2025/12/21/us/waymo-suspended-service-in-san-francisco-after-problems-during-power-outage.html" target="_blank" rel="external nofollow noopener">Waymo and Power Outages</a> </li> </ul> </td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 4</span>Utilitarianism &amp; Deontology</td> <td> <ul class="reading-list"> <li><a href="https://www.nytimes.com/2020/01/18/technology/clearview-privacy-facial-recognition.html" target="_blank" rel="external nofollow noopener">Clearview AI</a></li> <li><a href="https://lawreview.law.miami.edu/take-it-at-face-value-court-approves-equity-based-settlement-in-clearview-ai-facial-recognition-class-action/" target="_blank" rel="external nofollow noopener">Clearview Settlement</a></li> </ul> </td> <td><span class="badge-assign">Group Assignment on the advent of software company's annual year-end feature</span></td> </tr> <tr> <td> <span class="lesson-num">Lesson 5</span>Additional Ethical Frameworks (e.g., Feminist, Communitarian)</td> <td> <ul class="reading-list"> <li><a href="https://news.mit.edu/2018/study-finds-gender-skin-type-bias-artificial-intelligence-systems-0212" target="_blank" rel="external nofollow noopener">Gender Shades Study</a></li> <li><a href="https://proceedings.mlr.press/v81/buolamwini18a.html" target="_blank" rel="external nofollow noopener">Original Paper</a></li> <li> <span class="badge-additional">Additional</span><a href="https://www.reuters.com/legal/government/epic-systems-sues-over-alleged-scheme-sell-medical-data-to-plaintiffs-lawyers-2026-01-13/" target="_blank" rel="external nofollow noopener">Epic sues company</a> </li> <li> <span class="badge-additional">Additional</span><a href="http://gendershades.org/docs/ibm.pdf" target="_blank" rel="external nofollow noopener">IBM response</a> </li> </ul> </td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 6</span>Fairness</td> <td> <ul class="reading-list"> <li><a href="https://restofworld.org/2023/ai-image-stereotypes/" target="_blank" rel="external nofollow noopener">World of Stereotypes</a></li> <li><a href="https://www.washington.edu/news/2024/10/31/ai-bias-resume-screening-race-gender/" target="_blank" rel="external nofollow noopener">Bias in Ranking Job Applicants</a></li> </ul> </td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 7</span>Data Privacy / Data Consent</td> <td> <ul class="reading-list"> <li><a href="https://www.cbsnews.com/news/mastercard-credit-card-customer-data-sold/" target="_blank" rel="external nofollow noopener">Mastercard Sells Data</a></li> <li><a href="https://www.npr.org/2024/10/03/g-s1-25795/23andme-data-genetic-dna-privacy" target="_blank" rel="external nofollow noopener">23andMe Data</a></li> </ul> </td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 8</span>IP / Plagiarism</td> <td> <ul class="reading-list"> <li><a href="https://www.rollingstone.com/music/music-news/a-i-music-suno-fires-back-at-record-labels-admits-training-on-copyrighted-music-lawsuit-1235072061/" target="_blank" rel="external nofollow noopener">AI Music Copyright</a></li> <li><a href="https://www.nytimes.com/2025/10/03/books/review/andrea-bartz-anthropic-lawsuit.html" target="_blank" rel="external nofollow noopener">Thriller Writer Copyright Win</a></li> <li> <span class="badge-additional">Additional</span><a href="https://www.theguardian.com/global-development/2018/dec/19/colonialism-accusations-hakuna-matata-disney-far-from-problem-free-lion-king-remake" target="_blank" rel="external nofollow noopener">Hakuna Matata Trademark</a> </li> </ul> </td> <td><span class="badge-assign">Group Assignment on creation of two AI-generated videos</span></td> </tr> <tr> <td> <span class="lesson-num">Lesson 9</span>Accountability</td> <td> <ul class="reading-list"> <li><a href="https://www.henricodolfing.ch/case-study-4-the-440-million-software-error-at-knight-capital/" target="_blank" rel="external nofollow noopener">Knight Capital Software Error</a></li> <li><a href="https://www.wired.com/story/the-aws-outage-was-a-nightmare-for-college-students/" target="_blank" rel="external nofollow noopener">AWS Outage Affects Canvas</a></li> <li> <span class="badge-optional">Optional</span><a href="https://www.thorntons-law.co.uk/knowledge/whos-liable-when-aws-goes-down-understanding-the-chain-of-responsibility" target="_blank" rel="external nofollow noopener">Liability when AWS goes Down</a> </li> </ul> </td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 10</span>Economic Sustainability</td> <td> <ul class="reading-list"> <li><a href="https://assets.anthropic.com/m/218c82b858610fac/original/Economic-Index.pdf" target="_blank" rel="external nofollow noopener">Anthropic Economic Index</a></li> <li><a href="https://www.thehrdigest.com/cba-rehires-45-workers-after-its-experiment-with-ai-goes-off-track/" target="_blank" rel="external nofollow noopener">Commonwealth Bank Rehires Employees</a></li> <li> <span class="badge-optional">Optional</span><a href="https://www.hbs.edu/bigs/will-artificial-intelligence-improve-or-eliminate-jobs" target="_blank" rel="external nofollow noopener">Will AI Improve or Eliminate Jobs?</a> </li> </ul> </td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 11</span>Environmental Sustainability</td> <td> <ul class="reading-list"> <li><a href="https://www.usatoday.com/story/money/business/2025/09/23/environmental-cost-of-ai/85797763007/" target="_blank" rel="external nofollow noopener">Hidden Environment Cost of Generative AI</a></li> <li><a href="https://www.technologyreview.com/2025/05/20/1116327/ai-energy-usage-climate-footprint-big-tech/" target="_blank" rel="external nofollow noopener">AI's energy footprint</a></li> </ul> </td> <td><span class="badge-assign">Final Project (AI co-scientist) Proposal</span></td> </tr> <tr> <td> <span class="lesson-num">Lesson 12</span>Autonomy</td> <td> <ul class="reading-list"> <li><a href="https://www.technologyreview.com/2020/09/17/1008549/kids-need-protection-from-ai/" target="_blank" rel="external nofollow noopener">Algorithmic Protection for Children</a></li> <li><a href="https://www.technologyreview.com/2020/08/07/1006132/software-algorithms-proctoring-online-tests-ai-ethics/" target="_blank" rel="external nofollow noopener">Exam Proctoring Tools</a></li> </ul> </td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 13</span>Agency</td> <td> <ul class="reading-list"> <li><a href="https://medium.com/codex/the-devin-ai-controversy-a-senior-engineers-perspective-on-ai-hype-vs-reality-61604c02d9c6" target="_blank" rel="external nofollow noopener">Devin AI</a></li> <li><a href="https://www.theartnewspaper.com/2023/05/01/instagrams-new-tools-prove-shadowbanning-is-realand-now-artists-are-trapped" target="_blank" rel="external nofollow noopener">Instagram Shadowbanning</a></li> </ul> </td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 14</span>Business of AI / Software</td> <td> <ul class="reading-list"> <li><a href="https://www.technologyreview.com/2025/08/15/1121900/gpt4o-grief-ai-companion/" target="_blank" rel="external nofollow noopener">GPT-4o Shutdown</a></li> <li><a href="https://www.nytimes.com/2025/08/04/technology/google-meta-openai-military-war.html" target="_blank" rel="external nofollow noopener">Militarization of Silicon Valley</a></li> </ul> </td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 15</span>AI Safety and Alignment</td> <td> <ul class="reading-list"> <li><a href="https://www.wsj.com/tech/ai/ai-chatbot-startup-google-to-settle-lawsuits-over-teen-suicides-fb41a063" target="_blank" rel="external nofollow noopener">AI Companion Lawsuit Settlements</a></li> <li><a href="https://dl.acm.org/doi/10.1145/3613904.3641922" target="_blank" rel="external nofollow noopener">Benchmarking with Personas</a></li> <li> <span class="badge-optional">Optional</span><a href="https://www.thenationalcouncil.org/resources/case-vignette-slides-and-sample-cases/" target="_blank" rel="external nofollow noopener">Mental Wellbeing Case Vignettes</a> </li> </ul> </td> <td><span class="badge-assign">Group Assignment on red teaming for mental health AI safety</span></td> </tr> <tr> <td> <span class="lesson-num">Lesson 16</span>Taking Back Your Data</td> <td> <ul class="reading-list"> <li><a href="https://issues.org/ai-ethics-research-framework-human-rights-gray/" target="_blank" rel="external nofollow noopener">AI Human Rights Framework</a></li> <li><a href="https://www.nejm.org/doi/full/10.1056/NEJMp2502448" target="_blank" rel="external nofollow noopener">Clinical Surveillance</a></li> <li> <span class="badge-optional">Optional</span><a href="https://arxiv.org/pdf/2405.19479" target="_blank" rel="external nofollow noopener">Participation in Age of Foundation Models</a> </li> </ul> </td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 17</span>Re-visiting Data Consent</td> <td> <ul class="reading-list"> <li><a href="https://www.reuters.com/legal/litigation/health-care-ambient-scribes-offer-promise-create-new-legal-frontiers--pracin-2026-01-23/" target="_blank" rel="external nofollow noopener">Healthcare Ambient Scribe</a></li> <li><a href="https://www.mediaweek.com.au/posting-from-the-afterlife-meta-patents-ai-digital-stand-ins/" target="_blank" rel="external nofollow noopener">AI Digital Stand-ins</a></li> <li> <span class="badge-optional">Optional</span><a href="https://patents.google.com/patent/US12513102B2/en" target="_blank" rel="external nofollow noopener">Meta AI Patent</a> </li> </ul> </td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 18</span>Class-Led Discussion</td> <td> <ul class="reading-list"> <li><a href="https://www.archive.vtmag.vt.edu/spring16/fighting-for-flint.html" target="_blank" rel="external nofollow noopener">Fighting for Flint</a></li> <li><a href="https://lailluminator.com/2024/05/10/air-monitoring/" target="_blank" rel="external nofollow noopener">Citizen-Led Air Monitoring</a></li> </ul> </td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 19</span>Class-Led Discussion</td> <td> <ul class="reading-list"> <li><a href="https://tribunemag.co.uk/2022/01/amazon-algorithm-human-resource-management-tech-worker-surveillance" target="_blank" rel="external nofollow noopener">Algorithm is Your Boss</a></li> <li><a href="https://equitablegrowth.org/how-artificial-intelligence-uncouples-hard-work-from-fair-wages-through-surveillance-pay-practices-and-how-to-fix-it/" target="_blank" rel="external nofollow noopener">Algorithmic Wage</a></li> </ul> </td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 20</span>Class-Led Discussion</td> <td> <ul class="reading-list"> <li><a href="https://www.nytimes.com/2025/05/14/technology/chatgpt-college-professors.html" target="_blank" rel="external nofollow noopener">Professors using ChatGPT</a></li> <li><a href="https://www.cnn.com/2024/04/06/tech/teachers-grading-ai" target="_blank" rel="external nofollow noopener">AI Grading Essays</a></li> </ul> </td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 21</span>Class-Led Discussion</td> <td> <ul class="reading-list"> <li><a href="https://www.theguardian.com/us-news/2021/apr/29/ivy-league-colleges-apologize-bones-black-child-move" target="_blank" rel="external nofollow noopener">Coursera using MOVE bombing bones</a></li> <li><a href="https://www.nytimes.com/2021/04/24/us/move-rowhouse-bombing-victim-remains.html" target="_blank" rel="external nofollow noopener">Anthropologists keep bones</a></li> </ul> </td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 22</span>Class-Led Discussion</td> <td> <ul class="reading-list"> <li><a href="https://www.nytimes.com/2021/05/18/business/citizen-app-arson-wildfire-devin-hilton.html" target="_blank" rel="external nofollow noopener">Citizen manhunt gets the wrong person</a></li> <li><a href="https://www.vice.com/en/article/lapd-emails-citizen-palisades-wildfire-manhunt/" target="_blank" rel="external nofollow noopener">Fallout from Citizen's manhunt</a></li> <li> <span class="badge-additional">Additional</span><a href="https://dl.acm.org/doi/fullHtml/10.1145/3544548.3581258" target="_blank" rel="external nofollow noopener">Citizen Atlanta Case Study</a> </li> </ul> </td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 23</span>Class-Led Discussion</td> <td> <ul class="reading-list"> <li><a href="https://www.cnn.com/2024/12/22/business/facebook-content-moderators-kenya-ptsd-intl" target="_blank" rel="external nofollow noopener">Cost of Content Moderation</a></li> <li><a href="https://www.nbcnews.com/tech/elon-musk/elon-musk-grokipedia-wikipedia-neo-nazi-grok-42-encyclopedia-rcna244749" target="_blank" rel="external nofollow noopener">Grokipedia Cite Wikipedia-blacklisted sources</a></li> </ul> </td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 24</span>How Robots and Agents Changed in Two Months</td> <td> <ul class="reading-list"> <li> <span class="badge-optional">Optional</span><a href="https://www.wsbtv.com/news/local/atlanta/next-time-you-ride-waymo-you-could-be-helping-city-fill-potholes/BUIJMXX3VFCA7EWZPSNUX6NERU/" target="_blank" rel="external nofollow noopener">Waymo helping with potholes</a> </li> <li> <span class="badge-optional">Optional</span><a href="https://www.fox5atlanta.com/news/castleberry-hill-robotic-guard-dogs-crime-fighting" target="_blank" rel="external nofollow noopener">Robot dogs fight crime</a> </li> <li> <span class="badge-optional">Optional</span><a href="https://www.wsj.com/tech/ai/ai-bots-claude-openclaw-285ac816" target="_blank" rel="external nofollow noopener">Obsession with OpenClaw</a> </li> <li> <span class="badge-optional">Optional</span><a href="https://arstechnica.com/security/2026/04/heres-why-its-prudent-for-openclaw-users-to-assume-compromise/" target="_blank" rel="external nofollow noopener">OpenClaw security concerns</a> </li> <li> <span class="badge-optional">Optional</span><a href="https://www.techbuzz.ai/articles/ai-agents-guilt-tripped-into-self-sabotage-in-new-study" target="_blank" rel="external nofollow noopener">AI Agents self-sabotage</a> </li> <li> <span class="badge-optional">Optional</span><a href="https://fortune.com/2026/01/31/ai-agent-moltbot-clawdbot-openclaw-data-privacy-security-nightmare-moltbook-social-network/" target="_blank" rel="external nofollow noopener">Moltbook</a> </li> <li> <span class="badge-optional">Optional</span><a href="https://awesomeagents.ai/news/moltbook-reverse-captcha/" target="_blank" rel="external nofollow noopener">Reverse CAPTCHA</a> </li> </ul> </td> <td><span class="badge-assign">Final Project Report</span></td> </tr> <tr> <td> <span class="lesson-num">Lesson 25</span>What Does it Mean to be Human in the Age of AI</td> <td> <ul class="reading-list"> <li> <span class="badge-optional">Optional</span><a href="https://www.nytimes.com/2026/04/19/world/asia/running-robot-sets-record.html" target="_blank" rel="external nofollow noopener">Humanoid Robot wins half-marathon</a> </li> <li> <span class="badge-optional">Optional</span><a href="https://www.theguardian.com/commentisfree/2026/apr/14/ai-language-human-speech" target="_blank" rel="external nofollow noopener">AI may change speech and thought</a> </li> </ul> </td> <td></td> </tr> <tr> <td> <span class="lesson-num">Lesson 26</span>Final Project Presentations</td> <td></td> <td></td> </tr> </tbody> </table> <h2 class="section-title">Assignments and Grading</h2> <p>The final grade will be determined by a weighted average of all the graded items.</p> <table class="table table-bordered table-grading mt-3" style="max-width:600px;"> <thead> <tr> <th>Component</th> <th>Type</th> <th>Weight</th> </tr> </thead> <tbody> <tr> <td>Participation + Reading Exercises</td> <td>Individual</td> <td class="weight">20%</td> </tr> <tr> <td>Leading In-Class Discussion</td> <td>Group</td> <td class="weight">20%</td> </tr> <tr> <td>Peer Evaluation of In-Class Discussion</td> <td>Individual</td> <td class="weight">10%</td> </tr> <tr> <td>3 Assignments</td> <td>Group</td> <td class="weight">24%</td> </tr> <tr> <td>Final Project</td> <td>Individual</td> <td class="weight">26%</td> </tr> </tbody> </table> <div class="policy-box"> <strong>AI Tool Policy.</strong> You may use generative AI tools such as Co-Pilot and ChatGPT in the same manner as an Internet resource. You must credit the interaction source. <em>You are not allowed to solicit direct answers or duplicate responses from these tools. You may not use any generative AI writing assistants</em> to create the "written aspects" of the assignments and final project. </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Joyce C Ho. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
     addBackToTop();
-  </script> <script type="module" src="/assets/js/search/ninja-keys.min.js?a3446f084dcaecc5f75aa1757d087dcf"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/js/search-setup.js?6c304f7b1992d4b60f7a07956e52f04a"></script> <script src="/assets/js/search-data.js"></script> <script src="/assets/js/shortcut-key.js?6f508d74becd347268a7f822bca7309d"></script> </body> </html>
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "about",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-group",
+          title: "group",
+          description: "Practical Data Mining &amp; Exploration Lab",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/group/";
+          },
+        },{id: "nav-projects",
+          title: "projects",
+          description: "A sample of my group&#39;s research projects. These projects are not a true reflection of what we work on these days. My students&#39; interests are the best way to gauge what we do!",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "nav-publications",
+          title: "publications",
+          description: "For the most up-to-date list, please see my Google Scholar profile. This page is occasionally updated and generated by jekyll-scholar.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-courses",
+          title: "courses",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/courses/";
+          },
+        },{id: "books-the-godfather",
+          title: 'The Godfather',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_godfather.html";
+            },},{id: "courses-cs-171-introduction-to-computer-science-ii",
+          title: 'CS 171 - Introduction to Computer Science II',
+          description: "",
+          section: "Courses",handler: () => {
+              window.location.href = "/courses/cs171_f17.html";
+            },},{id: "courses-cs-171-introduction-to-computer-science-ii",
+          title: 'CS 171 - Introduction to Computer Science II',
+          description: "",
+          section: "Courses",handler: () => {
+              window.location.href = "/courses/cs171_f21.html";
+            },},{id: "courses-cs-171-introduction-to-computer-science-ii",
+          title: 'CS 171 - Introduction to Computer Science II',
+          description: "",
+          section: "Courses",handler: () => {
+              window.location.href = "/courses/cs171_s22.html";
+            },},{id: "courses-cs-334-machine-learning",
+          title: 'CS 334 - Machine Learning',
+          description: "",
+          section: "Courses",handler: () => {
+              window.location.href = "/courses/cs334_f19.html";
+            },},{id: "courses-cs-334-machine-learning",
+          title: 'CS 334 - Machine Learning',
+          description: "",
+          section: "Courses",handler: () => {
+              window.location.href = "/courses/cs334_f23.html";
+            },},{id: "courses-cs-334-machine-learning",
+          title: 'CS 334 - Machine Learning',
+          description: "",
+          section: "Courses",handler: () => {
+              window.location.href = "/courses/cs334_s24.html";
+            },},{id: "courses-cs-377-database-systems",
+          title: 'CS 377 - Database Systems',
+          description: "",
+          section: "Courses",handler: () => {
+              window.location.href = "/courses/cs377_f21.html";
+            },},{id: "courses-cs-377-database-systems",
+          title: 'CS 377 - Database Systems',
+          description: "",
+          section: "Courses",handler: () => {
+              window.location.href = "/courses/cs377_s16.html";
+            },},{id: "courses-cs-377-database-systems",
+          title: 'CS 377 - Database Systems',
+          description: "",
+          section: "Courses",handler: () => {
+              window.location.href = "/courses/cs377_s17.html";
+            },},{id: "courses-cs-377-database-systems",
+          title: 'CS 377 - Database Systems',
+          description: "",
+          section: "Courses",handler: () => {
+              window.location.href = "/courses/cs377_s18.html";
+            },},{id: "courses-cs-512-ethics-of-computing-and-ai",
+          title: 'CS 512 - Ethics of Computing and AI',
+          description: "",
+          section: "Courses",handler: () => {
+              window.location.href = "/courses/cs512_s26.html";
+            },},{id: "courses-cs-534-machine-learning",
+          title: 'CS 534 - Machine Learning',
+          description: "",
+          section: "Courses",handler: () => {
+              window.location.href = "/courses/cs534_f17.html";
+            },},{id: "courses-cs-534-machine-learning",
+          title: 'CS 534 - Machine Learning',
+          description: "",
+          section: "Courses",handler: () => {
+              window.location.href = "/courses/cs534_f18.html";
+            },},{id: "courses-cs-534-machine-learning",
+          title: 'CS 534 - Machine Learning',
+          description: "",
+          section: "Courses",handler: () => {
+              window.location.href = "/courses/cs534_f23.html";
+            },},{id: "courses-cs-534-machine-learning",
+          title: 'CS 534 - Machine Learning',
+          description: "",
+          section: "Courses",handler: () => {
+              window.location.href = "/courses/cs534_s17.html";
+            },},{id: "courses-cs-554-database-systems",
+          title: 'CS 554 - Database Systems',
+          description: "",
+          section: "Courses",handler: () => {
+              window.location.href = "/courses/cs554_f25.html";
+            },},{id: "courses-cs-584-big-data-analytics",
+          title: 'CS 584 - Big Data Analytics',
+          description: "",
+          section: "Courses",handler: () => {
+              window.location.href = "/courses/cs584_s16.html";
+            },},{id: "news-pheknow-cloud-wins-2017-distinguished-clinical-research-informatics-paper-award",
+          title: 'PheKnow-Cloud wins 2017 Distinguished Clinical Research Informatics Paper Award.',
+          description: "",
+          section: "News",},{id: "news-2018-grace-hopper-conference-faculty-scholar-recipient",
+          title: '2018 Grace Hopper Conference Faculty Scholar recipient.',
+          description: "",
+          section: "News",},{id: "news-nih-funds-project-on-leveraging-modern-analytic-approaches-to-improve-diabetes-outcomes",
+          title: 'NIH funds project on “Leveraging modern analytic approaches to improve diabetes outcomes”.',
+          description: "",
+          section: "News",},{id: "news-piveted-granite-wins-best-student-paper-in-mlmh-workshop-at-kdd-2018",
+          title: 'PIVETED-Granite wins Best Student Paper in MLMH Workshop at KDD 2018.',
+          description: "",
+          section: "News",},{id: "news-nsf-funds-a-joint-project-with-dr-li-xiong-and-dr-jimeng-sun-on-times-a-tensor-factorization-platform-for-spatio-temporal-data",
+          title: 'NSF funds a joint project with Dr. Li Xiong and Dr. Jimeng Sun...',
+          description: "",
+          section: "News",},{id: "news-jasmine-nakayama-wins-a-best-poster-award-at-the-gnlc-2019-doctoral-symposium-for-our-work-on-handling-abbreviations-in-nursing-notes",
+          title: 'Jasmine Nakayama wins a best poster award at the GNLC 2019 Doctoral Symposium...',
+          description: "",
+          section: "News",},{id: "news-mani-sotoodeh-is-nominated-for-the-amia-informatics-summits-best-student-paper-award",
+          title: 'Mani Sotoodeh is nominated for the “AMIA Informatics Summits best student paper award”....',
+          description: "",
+          section: "News",},{id: "news-sihan-yue-wins-the-trevor-evans-award-and-colin-jiang-wins-the-chair-s-award-for-excellence-at-the-emory-department-awards-ceremony",
+          title: 'Sihan Yue wins the Trevor Evans award and Colin Jiang wins the Chair’s...',
+          description: "",
+          section: "News",},{id: "news-dr-jimeng-sun-and-i-present-a-tutorial-at-sdm-on-large-scale-spatiotemporal-analysis-using-tensor-factorization",
+          title: 'Dr. Jimeng Sun and I present a tutorial at SDM on “Large-scale spatiotemporal...',
+          description: "",
+          section: "News",},{id: "news-sihan-yue-and-tianhui-mao-graduate-with-highest-honors",
+          title: 'Sihan Yue and Tianhui Mao graduate with highest honors.',
+          description: "",
+          section: "News",},{id: "news-nih-funds-project-on-re-envisioned-chart-assessment-for-real-time-investigation-of-nursing-and-guidance",
+          title: 'NIH funds project on “Re-envisioned chart assessment for real-time investigation of nursing and...',
+          description: "",
+          section: "News",},{id: "news-bonggun-shin-gives-an-invited-talk-at-naver-on-his-work-in-deep-learning-based-drug-discovery",
+          title: 'Bonggun Shin gives an invited talk at Naver on his work in “Deep...',
+          description: "",
+          section: "News",},{id: "news-joyce-ho-gives-a-keynote-at-rocky-2019",
+          title: 'Joyce Ho gives a keynote at Rocky 2019.',
+          description: "",
+          section: "News",},{id: "news-joyce-ho-is-a-track-co-chair-for-the-acm-chil-2020-conference-submit-your-papers-by-1-13-2020",
+          title: 'Joyce Ho is a track co-chair for the ACM CHIL 2020 conference. Submit...',
+          description: "",
+          section: "News",},{id: "news-destination-zero-is-among-the-top-100-projects-under-consideration-for-the-100-million-grant-by-the-macarthur-foundation-s-100-amp-amp-change",
+          title: 'Destination Zero is among the top 100 projects under consideration for the $100...',
+          description: "",
+          section: "News",},{id: "news-congratulations-to-bonggun-shin-for-successfully-defending-his-phd-dissertation",
+          title: 'Congratulations to Bonggun Shin for successfully defending his PhD dissertation!',
+          description: "",
+          section: "News",},{id: "news-congratulations-to-wenqin-dong-and-yilin-dong-for-graduating-with-highest-honors-and-high-honors-respectively",
+          title: 'Congratulations to Wenqin Dong and Yilin Dong for graduating with highest honors and...',
+          description: "",
+          section: "News",},{id: "news-wenqin-dong-wins-the-academic-excellence-award-and-bonggun-shin-wins-the-schoettle-research-award",
+          title: 'Wenqin Dong wins the Academic Excellence Award and Bonggun Shin wins the Schoettle...',
+          description: "",
+          section: "News",},{id: "news-joyce-ho-recognized-as-emory-cs-researcher-of-the-year",
+          title: 'Joyce Ho recognized as Emory CS Researcher of the Year.',
+          description: "",
+          section: "News",},{id: "news-joyce-ho-gives-invited-talk-at-aaai-2021-workshop-on-trustworthy-ai-for-healthcare",
+          title: 'Joyce Ho gives invited talk at AAAI 2021 Workshop on Trustworthy AI for...',
+          description: "",
+          section: "News",},{id: "news-jing-ma-receives-a-the-web-conference-2021-student-scholarship-award",
+          title: 'Jing Ma receives a The Web Conference 2021 student scholarship award.',
+          description: "",
+          section: "News",},{id: "news-jing-zhang-spotlighted-by-the-emory-international-student-office-for-his-work-on-the-covid-19-health-equity-interactive-dashboard",
+          title: 'Jing Zhang spotlighted by the Emory International Student Office for his work on...',
+          description: "",
+          section: "News",},{id: "news-jing-ma-recognized-with-the-chris-schoettle-graduate-research-award",
+          title: 'Jing Ma recognized with the Chris Schoettle Graduate Research Award.',
+          description: "",
+          section: "News",},{id: "news-congratulations-to-jing-ma-for-successfully-defending-her-phd-dissertation",
+          title: 'Congratulations to Jing Ma for successfully defending her PhD dissertation!',
+          description: "",
+          section: "News",},{id: "news-congratulations-to-mani-sotoodeh-for-successfully-defending-his-phd-dissertation",
+          title: 'Congratulations to Mani Sotoodeh for successfully defending his PhD dissertation!',
+          description: "",
+          section: "News",},{id: "news-nsf-funds-a-joint-project-with-drs-li-xiong-sivasubramanium-bhavani-gari-clifford-xiaoqian-jiang-and-paul-schulz-on-premed-privacy-preserving-and-robust-computational-phenotyping-using-multisite-ehr-data",
+          title: 'NSF funds a joint project with Drs. Li Xiong, Sivasubramanium Bhavani, Gari Clifford,...',
+          description: "",
+          section: "News",},{id: "news-nih-funds-project-on-machine-learning-for-atrial-fibrillation-ablation",
+          title: 'NIH funds project on “Machine Learning for Atrial Fibrillation Ablation”.',
+          description: "",
+          section: "News",},{id: "news-congratulations-to-zelalem-gero-for-successfully-defending-his-phd-dissertation",
+          title: 'Congratulations to Zelalem Gero for successfully defending his PhD dissertation!',
+          description: "",
+          section: "News",},{id: "news-johnson-and-johnson-disparities-quickfire-challenge-award-receipient-with-shivani-patel",
+          title: 'Johnson and Johnson Disparities Quickfire Challenge Award receipient with Shivani Patel.',
+          description: "",
+          section: "News",},{id: "news-chil-2022-general-co-chair-submit-your-papers-by-1-14-2022",
+          title: 'CHIL 2022 General co-chair! Submit your papers by 1/14/2022.',
+          description: "",
+          section: "News",},{id: "news-congratulations-to-huan-he-for-successfully-defending-his-phd-dissertation",
+          title: 'Congratulations to Huan He for successfully defending his PhD dissertation!',
+          description: "",
+          section: "News",},{id: "news-jing-zhang-receives-the-covid-innovation-for-teaching-and-research-award",
+          title: 'Jing Zhang receives the COVID Innovation for Teaching and Research Award.',
+          description: "",
+          section: "News",},{id: "news-congratulations-to-helen-zeng-and-leo-sheng-for-graduating-with-highest-honors",
+          title: 'Congratulations to Helen Zeng and Leo Sheng for graduating with highest honors.',
+          description: "",
+          section: "News",},{id: "news-nsf-career-award-receipient-to-help-untangle-drivers-of-health-disparities",
+          title: 'NSF Career Award receipient to help untangle drivers of health disparities.',
+          description: "",
+          section: "News",},{id: "news-ran-xu-s-paper-on-hypergraphs-for-ehr-receives-a-best-paper-award-at-ml4h",
+          title: 'Ran Xu’s paper on hypergraphs for EHR receives a best paper award at...',
+          description: "",
+          section: "News",},{id: "news-chil-2023-general-co-chair-submit-your-papers-by-2-3-2024",
+          title: 'CHIL 2023 General co-chair! Submit your papers by 2/3/2024.',
+          description: "",
+          section: "News",},{id: "news-congratulations-to-jing-zhang-for-successfully-defending-his-phd-dissertation",
+          title: 'Congratulations to Jing Zhang for successfully defending his PhD dissertation!',
+          description: "",
+          section: "News",},{id: "news-carrie-gu-and-tiantian-li-win-the-emory-cs-academic-excellence-award-and-undergraduate-research-award",
+          title: 'Carrie Gu and Tiantian Li win the Emory CS Academic Excellence Award and...',
+          description: "",
+          section: "News",},{id: "news-congratulations-to-carrie-gu-kevin-wu-ruby-wu-and-tiantian-li-for-graduating-with-highest-honors",
+          title: 'Congratulations to Carrie Gu, Kevin Wu, Ruby Wu, and Tiantian Li for graduating...',
+          description: "",
+          section: "News",},{id: "news-congratulations-to-eric-lee-for-successfully-defending-his-phd-dissertation",
+          title: 'Congratulations to Eric Lee for successfully defending his PhD dissertation!',
+          description: "",
+          section: "News",},{id: "news-honored-to-receive-the-2023-icdm-young-female-scholar-in-data-science-award",
+          title: 'Honored to receive the 2023 ICDM Young Female Scholar in Data Science Award....',
+          description: "",
+          section: "News",},{id: "news-excited-to-be-the-director-of-graduate-studies-for-the-emory-computer-science-master-of-science-program",
+          title: 'Excited to be the Director of Graduate Studies for the Emory Computer Science...',
+          description: "",
+          section: "News",},{id: "news-thrilled-to-be-named-to-the-inaugural-fda-digital-health-adivsory-committee",
+          title: 'Thrilled to be named to the inaugural FDA Digital Health Adivsory Committee.',
+          description: "",
+          section: "News",},{id: "news-congratulations-to-alex-belov-dani-roytburg-and-yella-diekmann-for-graduating-with-highest-honors",
+          title: 'Congratulations to Alex Belov, Dani Roytburg, and Yella Diekmann for graduating with highest...',
+          description: "",
+          section: "News",},{id: "news-nih-funds-a-joint-project-with-sharon-sonenblum-school-of-nursing-on-pragmatic-and-automated-pressure-injury-detection-across-a-heterogeneous-patient-population",
+          title: 'NIH funds a joint project with Sharon Sonenblum (School of Nursing) on Pragmatic...',
+          description: "",
+          section: "News",},{id: "news-congratulations-to-ran-xu-for-successfully-defending-her-phd-dissertation",
+          title: 'Congratulations to Ran Xu for successfully defending her PhD dissertation!',
+          description: "",
+          section: "News",},{id: "projects-afa",
+          title: 'AFA',
+          description: "Detecting adverse outcomes from atrial fibrillation ablation",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/afa.html";
+            },},{id: "projects-biodiversity-db",
+          title: 'Biodiversity DB',
+          description: "Database integration for biodiversity",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/bond.html";
+            },},{id: "projects-caring",
+          title: 'CARING',
+          description: "Chart-assessment for Real-time Investigation of Nursing and Guidance",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/caring.html";
+            },},{id: "projects-me-cfs-subtyping",
+          title: 'ME/CFS Subtyping',
+          description: "Identifying subgroups using medications",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/cfs_cdc.html";
+            },},{id: "projects-diabetes-subtypes",
+          title: 'Diabetes Subtypes',
+          description: "Identifying subtypes of type 2 diabetes using EHRs",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/diabetes_subtypes.html";
+            },},{id: "projects-patient-facing-llm-safety",
+          title: 'Patient-facing LLM Safety',
+          description: "Evaluating and improving safety of large language models for patient-facing medical question answering",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/llm_safety.html";
+            },},{id: "projects-cvd-analytics",
+          title: 'CVD analytics',
+          description: "Cardiovascular risk assessment for patients with diabetes",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/nlm_k01.html";
+            },},{id: "projects-pheknow-cloud",
+          title: 'Pheknow-Cloud',
+          description: "Phenotype evaluation via PubMed",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/pheknow.html";
+            },},{id: "projects-prevent-pri",
+          title: 'PREVENT-PRI',
+          description: "Pragmatic and automated pressure injury detection across a heterogeneous patient population",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/prevent_pri.html";
+            },},{id: "projects-sodohku",
+          title: 'sodohku',
+          description: "Unlocking social determinants of health knowledge",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/sodohku.html";
+            },},{id: "projects-tensorox",
+          title: 'tensorox',
+          description: "Computational phenotyping via tensor factorization",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/tensor_rocks.html";
+            },},{id: "projects-times",
+          title: 'TIMES',
+          description: "Spatiotemporal analysis via tensor factorization",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/times.html";
+            },},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%79%6F%75@%65%78%61%6D%70%6C%65.%63%6F%6D", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/joyceho", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/joyce-ho-05a12312", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=u3ks_tgAAAAJ", "_blank");
+        },
+      },{
+        id: 'social-x',
+        title: 'X',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://twitter.com/joycehoUT", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>
