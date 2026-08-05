@@ -20,6 +20,11 @@ course_groups:
     description: "Relational databases, SQL, query optimization, and database design."
     level: "undergraduate"
     semesters: ["Fall 2021", "Spring 2018", "Spring 2017", "Spring 2016"]
+  - id: "CS 312"
+    title: "CS 312 - Computing, AI, Ethics, and Society"
+    description: "Ethical, societal, and policy implications of emerging computing and AI technologies."
+    level: "undergraduate"
+    semesters: ["Fall 2024"]
   - id: "CS 512"
     title: "CS 512 - Ethics of Computing and AI"
     description: "Exploration of benefits and harms of emerging computing technologies"
